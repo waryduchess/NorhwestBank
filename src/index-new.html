@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exposición - Northwest Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #114455 0%, #030B0E 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación  editar-->
+
+
+    
+    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-lg font-bold">EXPOSICIÓN</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-[#DBDFE6] transition font-semibold">Inicio</a>
+                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition">5W's</a>
+                    <a href="foda.html" class="hover:text-[#DBDFE6] transition">FODA</a>
+                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition">Marca</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
+                <a href="index.html" class="hover:text-[#DBDFE6] transition block font-semibold">Inicio</a>
+                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block">5W's</a>
+                <a href="foda.html" class="hover:text-[#DBDFE6] transition block">FODA</a>
+                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block">Marca</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Portada de Exposición -->
+    <section class="gradient-bg text-white py-24">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="mb-8">
+                        <p class="text-[#DBDFE6] text-lg mb-2 font-semibold">
+                            <i class="fas fa-presentation mr-2"></i>EXPOSICIÓN ACADÉMICA
+                        </p>
+                        <h1 class="text-5xl md:text-6xl font-bold mb-6">NORTHWEST BANK</h1>
+                        <div class="w-24 h-1 bg-[#493A1D] mb-6"></div>
+                        <p class="text-2xl text-[#DBDFE6] font-semibold mb-4">
+                            Análisis Integral de Marca Premium
+                        </p>
+                    </div>
+                    
+                    <p class="text-lg mb-8 leading-relaxed text-gray-200">
+                        Proyecto de investigación y análisis de identidad corporativa enfocado en una institución financiera de perfil premium con más de 70 años de trayectoria operativa.
+                    </p>
+                    
+                    <div class="bg-[#114455]/30 border-l-4 border-[#493A1D] p-6 mb-8 rounded">
+                        <p class="text-sm text-gray-300 mb-2">
+                            <i class="fas fa-bookmark mr-2 text-[#DBDFE6]"></i><strong>Palabras clave:</strong>
+                        </p>
+                        <p class="text-[#DBDFE6]">Marca · Identidad · Análisis FODA · Estrategia · Comunicación Premium</p>
+                    </div>
+                    
+                    <div class="space-x-4">
+                        <a href="#contenido" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition inline-block">
+                            <i class="fas fa-arrow-down mr-2"></i>Ver Contenido
+                        </a>
+                        <a href="5ws.html" class="border-2 border-[#DBDFE6] text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition inline-block">
+                            Comenzar Análisis
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-[#F4FAFD] rounded-xl p-8 shadow-2xl">
+                        <div class="bg-gradient-to-br from-[#114455] to-[#030B0E] rounded-lg p-12 mb-6">
+                            <img src="logo.png" alt="Logo Northwest Bank" class="h-48 w-auto mx-auto" style="aspect-ratio: 636/294;">
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-[#114455] mb-2">Northwest Bank</h3>
+                        <p class="text-[#493A1D] font-semibold mb-6">Institución Financiera Premium</p>
+                        
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center justify-center text-[#114455]">
+                                <i class="fas fa-calendar mr-2 text-[#493A1D]"></i>
+                                <span>Más de 70 años de historia</span>
+                            </div>
+                            <div class="flex items-center justify-center text-[#114455]">
+                                <i class="fas fa-globe mr-2 text-[#493A1D]"></i>
+                                <span>Operaciones en Europa</span>
+                            </div>
+                            <div class="flex items-center justify-center text-[#114455]">
+                                <i class="fas fa-gem mr-2 text-[#493A1D]"></i>
+                                <span>Perfil Premium</span>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-6 border-t border-[#DBDFE6]">
+                            <p class="text-sm text-[#030B0E] font-semibold">
+                                Estudio de Caso - Diseño e Identidad Corporativa
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secciones de Contenido -->
+    <section id="contenido" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-[#114455] mb-12 text-center">Módulos de Exposición</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Módulo 5W's -->
+                <a href="5ws.html" class="bg-gradient-to-br from-[#114455] to-[#0a2d39] text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">5W's</h3>
+                    <p class="text-[#DBDFE6] text-sm mb-4">Análisis de: Qué, Quién, Por qué, Dónde y Cuándo</p>
+                    <p class="text-xs text-gray-300 font-semibold">
+                        <i class="fas fa-arrow-right mr-2"></i>Explorar →
+                    </p>
+                </a>
+
+                <!-- Módulo FODA -->
+                <a href="foda.html" class="bg-gradient-to-br from-[#493A1D] to-[#2f2515] text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">FODA</h3>
+                    <p class="text-[#DBDFE6] text-sm mb-4">Fortalezas, Oportunidades, Debilidades y Amenazas</p>
+                    <p class="text-xs text-gray-300 font-semibold">
+                        <i class="fas fa-arrow-right mr-2"></i>Explorar →
+                    </p>
+                </a>
+
+                <!-- Módulo Marca -->
+                <a href="servicios.html" class="bg-gradient-to-br from-[#114455] to-[#0a2d39] text-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:scale-105">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Identidad Visual</h3>
+                    <p class="text-[#DBDFE6] text-sm mb-4">Colores, tipografía y sistema de marca</p>
+                    <p class="text-xs text-gray-300 font-semibold">
+                        <i class="fas fa-arrow-right mr-2"></i>Explorar →
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información General -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <div class="text-4xl text-[#493A1D] mb-4">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#114455] mb-3">Objetivo</h3>
+                    <p class="text-gray-700">Analizar y documentar la estrategia de marca, identidad visual y posicionamiento de Northwest Bank como institución financiera premium.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <div class="text-4xl text-[#493A1D] mb-4">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#114455] mb-3">Metodología</h3>
+                    <p class="text-gray-700">Análisis cualitativo y cuantitativo de marca, aplicación de herramientas de gestión estratégica y evaluación de identidad corporativa.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow">
+                    <div class="text-4xl text-[#493A1D] mb-4">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#114455] mb-3">Alcance</h3>
+                    <p class="text-gray-700">Estudio integral que comprende análisis de mercado, posicionamiento, identidad visual y estrategia de comunicación de la marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#030B0E] text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo.png" alt="Logo" class="w-10 h-10 mr-4">
+                        <span class="text-xl font-bold">EXPOSICIÓN</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Proyecto académico de análisis integral de identidad corporativa y estrategia de marca para Northwest Bank.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Navegación</h4>
+                    <div class="space-y-3">
+                        <a href="index.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">
+                            <i class="fas fa-home mr-2"></i>Inicio
+                        </a>
+                        <a href="5ws.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">
+                            <i class="fas fa-question-circle mr-2"></i>5W's
+                        </a>
+                        <a href="foda.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">
+                            <i class="fas fa-chart-line mr-2"></i>FODA
+                        </a>
+                        <a href="servicios.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">
+                            <i class="fas fa-palette mr-2"></i>Marca
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Autores</h4>
+                    <div class="space-y-3">
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold text-sm">Zacarias Pérez Josefina Isabel</p>
+                            <p class="text-xs text-gray-400">Investigadora Principal</p>
+                        </div>
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold text-sm">García Rafael Erik Santiago</p>
+                            <p class="text-xs text-gray-400">Investigador de Tecnología</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>© 2026 Proyecto de Exposición - Análisis de Marca. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

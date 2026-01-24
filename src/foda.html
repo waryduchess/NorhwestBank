@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FODA - Northwest Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-new.html" class="hover:text-[#DBDFE6] transition">Inicio</a>
+                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition">5W's</a>
+                    <a href="foda.html" class="hover:text-[#DBDFE6] transition font-semibold">FODA</a>
+                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition">Marca</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
+                <a href="index-new.html" class="hover:text-[#DBDFE6] transition block">Inicio</a>
+                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block">5W's</a>
+                <a href="foda.html" class="hover:text-[#DBDFE6] transition block font-semibold">FODA</a>
+                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block">Marca</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- FODA Section -->
+    <section class="py-20 bg-[#F4FAFD] min-h-screen flex flex-col">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-[#114455] mb-4">ANÁLISIS FODA</h1>
+                <div class="w-24 h-1 bg-[#493A1D] mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-3xl mx-auto">
+                    Fortalezas, Oportunidades, Debilidades y Amenazas de Northwest Bank
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Fortalezas y Debilidades -->
+                <div class="space-y-8">
+                    <!-- Fortalezas -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-[#28A745] text-white p-4">
+                            <h3 class="text-2xl font-bold flex items-center">
+                                <i class="fas fa-trophy mr-3"></i>
+                                FORTALEZAS
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-[#28A745]/10 text-[#28A745] rounded-full p-2 mr-4">
+                                        <i class="fas fa-history"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Legado y Confianza</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Más de 70 años de historia operativa en Europa. Es un activo intangible enorme en un sector donde la reputación y la solvencia son primordiales.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#28A745]/10 text-[#28A745] rounded-full p-2 mr-4">
+                                        <i class="fas fa-globe-americas"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Movilidad Global</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Banco asociado a experiencias exclusivas y atención personalizada para clientes internacionales.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#28A745]/10 text-[#28A745] rounded-full p-2 mr-4">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Posicionamiento Premium</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Enfoque en segmento de alto poder adquisitivo con servicios exclusivos.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debilidades -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-[#D72334] text-white p-4">
+                            <h3 class="text-2xl font-bold flex items-center">
+                                <i class="fas fa-exclamation-triangle mr-3"></i>
+                                DEBILIDADES
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-[#D72334]/10 text-[#D72334] rounded-full p-2 mr-4">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Lentitud en la Toma de Decisiones</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Las organizaciones longevas pueden tener procesos jerárquicos lentos, dificultando la adaptación rápida al mercado.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#D72334]/10 text-[#D72334] rounded-full p-2 mr-4">
+                                        <i class="fas fa-user-friends"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Segmento Específico</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Enfoque en nicho premium limita la base de clientes potenciales.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oportunidades y Amenazas -->
+                <div class="space-y-8">
+                    <!-- Oportunidades -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-[#17A2B8] text-white p-4">
+                            <h3 class="text-2xl font-bold flex items-center">
+                                <i class="fas fa-bullseye mr-3"></i>
+                                OPORTUNIDADES
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-[#17A2B8]/10 text-[#17A2B8] rounded-full p-2 mr-4">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Banca de Inversión</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Para clientes de alto nivel, el banco puede ayudar a estructurar proyectos, captar inversionistas o emitir bonos.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#17A2B8]/10 text-[#17A2B8] rounded-full p-2 mr-4">
+                                        <i class="fas fa-building"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Capital de Trabajo</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Créditos diseñados para cubrir gastos operativos inmediatos de las empresas de clientes premium.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#17A2B8]/10 text-[#17A2B8] rounded-full p-2 mr-4">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Digitalización Premium</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Expandir servicios digitales exclusivos para el segmento alto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amenazas -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="bg-[#FFC107] text-gray-800 p-4">
+                            <h3 class="text-2xl font-bold flex items-center">
+                                <i class="fas fa-shield-alt mr-3"></i>
+                                AMENAZAS
+                            </h3>
+                        </div>
+                        <div class="p-6">
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-[#FFC107]/20 text-[#B08C00] rounded-full p-2 mr-4">
+                                        <i class="fas fa-plane-slash"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Cambio en Hábitos de Viaje</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Si los clientes viajan menos por temporadas, los beneficios ligados a viajes pierden atractivo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#FFC107]/20 text-[#B08C00] rounded-full p-2 mr-4">
+                                        <i class="fas fa-users-slash"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Competencia Fintech</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Empresas tecnológicas que ofrecen servicios financieros ágiles y digitales.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-[#FFC107]/20 text-[#B08C00] rounded-full p-2 mr-4">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-gray-800">Volatilidad Económica</h4>
+                                        <p class="text-gray-600 text-sm">
+                                            Inestabilidad en mercados financieros globales afecta a clientes de alto patrimonio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de Navegación -->
+    <section class="py-12 bg-white border-t-4 border-[#493A1D]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="5ws.html" class="bg-[#114455] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0a2d39] transition flex items-center">
+                <i class="fas fa-arrow-left mr-3"></i>Atrás
+            </a>
+            
+            <div class="text-center">
+                <p class="text-[#114455] font-bold text-lg">MÓDULO 2 DE 3: ANÁLISIS FODA</p>
+            </div>
+            
+            <a href="servicios.html" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition flex items-center">
+                Siguiente
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 mountain-shape bg-[#DBDFE6] mr-4"></div>
+                        <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Institución financiera premium con más de 70 años de experiencia, ofreciendo servicios exclusivos para clientes de alto patrimonio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Contacto</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-[#493A1D] mr-3"></i>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-[#493A1D] mr-3"></i>
+                            <span>premium@northwestbank.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-[#493A1D] mr-3"></i>
+                            <span>Av. Reforma 123, CDMX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Miembros del Equipo</h4>
+                    <div class="space-y-3">
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">Zacarias Pérez Josefina Isabel</p>
+                            <p class="text-sm text-gray-400">Directora General</p>
+                        </div>
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">García Rafael Erik Santiago</p>
+                            <p class="text-sm text-gray-400">Director de Tecnología</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Northwest Bank. Todos los derechos reservados. Institución financiera regulada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

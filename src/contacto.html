@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Northwest Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #114455 0%, #030B0E 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-new.html" class="hover:text-[#DBDFE6] transition">Inicio</a>
+                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition">5W's</a>
+                    <a href="foda.html" class="hover:text-[#DBDFE6] transition">FODA</a>
+                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition">Servicios</a>
+                    <a href="contacto.html" class="bg-[#493A1D] px-6 py-2 rounded-lg hover:bg-[#5a4a2a] transition font-semibold">Contacto</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
+                <a href="index-new.html" class="hover:text-[#DBDFE6] transition block">Inicio</a>
+                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block">5W's</a>
+                <a href="foda.html" class="hover:text-[#DBDFE6] transition block">FODA</a>
+                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block">Servicios</a>
+                <a href="contacto.html" class="bg-[#493A1D] px-6 py-2 rounded-lg hover:bg-[#5a4a2a] transition block w-fit font-semibold">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contacto Section -->
+    <section class="gradient-bg text-white py-20 min-h-screen flex flex-col">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold mb-4">CONTACTO</h1>
+                <div class="w-24 h-1 bg-[#DBDFE6] mx-auto"></div>
+                <p class="text-gray-300 mt-6 max-w-3xl mx-auto">
+                    Ponte en contacto con nuestro equipo de expertos para conocer más sobre nuestros servicios premium
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Card Teléfono -->
+                <div class="bg-white/10 backdrop-blur p-8 rounded-xl text-center hover:bg-white/20 transition">
+                    <div class="bg-[#493A1D] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Teléfono</h3>
+                    <p class="text-gray-200">+52 55 1234 5678</p>
+                    <p class="text-gray-300 text-sm mt-2">Lunes a Viernes 8:00 AM - 6:00 PM</p>
+                </div>
+
+                <!-- Card Email -->
+                <div class="bg-white/10 backdrop-blur p-8 rounded-xl text-center hover:bg-white/20 transition">
+                    <div class="bg-[#493A1D] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-200">premium@northwestbank.com</p>
+                    <p class="text-gray-300 text-sm mt-2">Respuesta en 24 horas</p>
+                </div>
+
+                <!-- Card Oficina -->
+                <div class="bg-white/10 backdrop-blur p-8 rounded-xl text-center hover:bg-white/20 transition">
+                    <div class="bg-[#493A1D] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Oficina</h3>
+                    <p class="text-gray-200">Av. Reforma 123</p>
+                    <p class="text-gray-300 text-sm mt-2">CDMX, México</p>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur p-8 rounded-xl">
+                <h2 class="text-2xl font-bold mb-6 text-center">Envíanos un Mensaje</h2>
+                <form class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Nombre</label>
+                            <input type="text" placeholder="Tu nombre" class="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:bg-white/30 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" placeholder="tu@email.com" class="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:bg-white/30 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Teléfono</label>
+                        <input type="tel" placeholder="Tu teléfono" class="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:bg-white/30 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Asunto</label>
+                        <input type="text" placeholder="Asunto del mensaje" class="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:bg-white/30 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Mensaje</label>
+                        <textarea placeholder="Tu mensaje aquí..." rows="5" class="w-full px-4 py-3 rounded-lg bg-white/20 text-white placeholder-gray-300 focus:outline-none focus:bg-white/30 transition resize-none"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#114455] mb-4">Nuestro Equipo Directivo</h2>
+                <div class="w-24 h-1 bg-[#493A1D] mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <!-- Directora General -->
+                <div class="bg-[#F4FAFD] rounded-xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-[#114455] to-[#030B0E] w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl text-[#DBDFE6]">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#030B0E] mb-2">Zacarias Pérez Josefina Isabel</h3>
+                    <p class="text-[#114455] font-semibold text-lg mb-4">Directora General</p>
+                    <p class="text-gray-600 mb-4">
+                        Con más de 20 años de experiencia en el sector financiero, lidera la visión estratégica de Northwest Bank hacia la excelencia en servicios premium.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] text-white rounded-full flex items-center justify-center hover:bg-[#1a5c77] transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] text-white rounded-full flex items-center justify-center hover:bg-[#1a5c77] transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Director de Tecnología -->
+                <div class="bg-[#F4FAFD] rounded-xl p-8 text-center">
+                    <div class="bg-gradient-to-br from-[#114455] to-[#030B0E] w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl text-[#DBDFE6]">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#030B0E] mb-2">García Rafael Erik Santiago</h3>
+                    <p class="text-[#114455] font-semibold text-lg mb-4">Director de Tecnología</p>
+                    <p class="text-gray-600 mb-4">
+                        Especialista en transformación digital con experiencia en sistemas bancarios de alto rendimiento, impulsa la innovación tecnológica de la institución.
+                    </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] text-white rounded-full flex items-center justify-center hover:bg-[#1a5c77] transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] text-white rounded-full flex items-center justify-center hover:bg-[#1a5c77] transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de Navegación -->
+    <section class="py-12 bg-gray-100 border-t-4 border-[#114455]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="servicios.html" class="bg-[#114455] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0a2d39] transition flex items-center">
+                <i class="fas fa-arrow-left mr-3"></i>Atrás
+            </a>
+            
+            <div class="text-center">
+                <p class="text-[#114455] font-bold text-lg">MÓDULO 4 DE 4: EQUIPO INVESTIGADOR</p>
+            </div>
+            
+            <a href="index-new.html" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition flex items-center">
+                Volver al Inicio
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <img src="logo.png" alt="Logo" class="w-10 h-10 mr-4">
+                        <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Institución financiera premium con más de 70 años de experiencia, ofreciendo servicios exclusivos para clientes de alto patrimonio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Enlaces Rápidos</h4>
+                    <div class="space-y-3">
+                        <a href="index-new.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">Inicio</a>
+                        <a href="5ws.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">Análisis 5W's</a>
+                        <a href="foda.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">Análisis FODA</a>
+                        <a href="servicios.html" class="text-gray-400 hover:text-[#DBDFE6] transition block">Servicios</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Contacto</h4>
+                    <div class="space-y-4 text-gray-400">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-[#493A1D] mr-3"></i>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-[#493A1D] mr-3"></i>
+                            <span>premium@northwestbank.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-[#493A1D] mr-3"></i>
+                            <span>Av. Reforma 123, CDMX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Northwest Bank. Todos los derechos reservados. Institución financiera regulada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

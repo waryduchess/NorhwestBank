@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Northwest Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@300;400;500;600&display=swap');
+        
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+        
+        .afacad-flux {
+            font-family: 'Afacad Flux', monospace;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-new.html" class="hover:text-[#DBDFE6] transition">Inicio</a>
+                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition">5W's</a>
+                    <a href="foda.html" class="hover:text-[#DBDFE6] transition">FODA</a>
+                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition font-semibold">Marca</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
+                <a href="index-new.html" class="hover:text-[#DBDFE6] transition block">Inicio</a>
+                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block">5W's</a>
+                <a href="foda.html" class="hover:text-[#DBDFE6] transition block">FODA</a>
+                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block font-semibold">Marca</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Servicios Section -->
+    <section class="py-20 bg-white min-h-screen flex flex-col">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-[#114455] mb-4">SISTEMA DE COLORES Y TIPOGRAFÍAS</h1>
+                <div class="w-24 h-1 bg-[#493A1D] mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Sistema de Colores -->
+                <div>
+                    <h3 class="text-2xl font-bold text-[#114455] mb-6">Sistema de Colores</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 bg-[#114455] rounded-lg mr-4"></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Primario (#114455)</h4>
+                                <p class="text-gray-600 text-sm">Tono sobrio y elegante, genera sensación de respaldo y control financiero.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 bg-[#DBDFE6] rounded-lg mr-4 border-2 border-gray-300"></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Secundario (#DBDFE6)</h4>
+                                <p class="text-gray-600 text-sm">Alto contraste accesible (niveles AA y AAA).</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 bg-[#493A1D] rounded-lg mr-4"></div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Acento (#493A1D)</h4>
+                                <p class="text-gray-600 text-sm">Usado en botones y acciones clave de forma controlada.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colores de estado -->
+                    <h4 class="text-xl font-bold text-[#114455] mt-8 mb-4">Colores de Estado</h4>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-[#28A745]/10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-[#28A745] rounded-full mr-2"></div>
+                                <span class="font-bold">Éxito</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Transacciones completadas exitosamente</p>
+                        </div>
+                        <div class="bg-[#FFC107]/10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-[#FFC107] rounded-full mr-2"></div>
+                                <span class="font-bold">Advertencia</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Proximidad a límites de crédito</p>
+                        </div>
+                        <div class="bg-[#17A2B8]/10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-[#17A2B8] rounded-full mr-2"></div>
+                                <span class="font-bold">Info</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Actualizaciones del sistema</p>
+                        </div>
+                        <div class="bg-[#D72334]/10 p-4 rounded-lg">
+                            <div class="flex items-center mb-2">
+                                <div class="w-6 h-6 bg-[#D72334] rounded-full mr-2"></div>
+                                <span class="font-bold">Error</span>
+                            </div>
+                            <p class="text-sm text-gray-600">Transacciones rechazadas</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sistema Tipográfico -->
+                <div>
+                    <h3 class="text-2xl font-bold text-[#114455] mb-6">Sistema Tipográfico</h3>
+                    
+                    <!-- Urbanist -->
+                    <div class="mb-8 p-6 bg-[#F4FAFD] rounded-xl">
+                        <h4 class="text-xl font-bold text-[#030B0E] mb-4">Urbanist</h4>
+                        <p class="text-lg mb-4" style="font-family: 'Urbanist', sans-serif;">
+                            Representa el "Estilo de Vida Premium" y el "Equilibrio". Su diseño limpio y espaciado generoso evocan una sensación de calma y orden.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Light 300</span>
+                                <span style="font-family: 'Urbanist', sans-serif; font-weight: 300;">Northwest Bank</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Regular 400</span>
+                                <span style="font-family: 'Urbanist', sans-serif; font-weight: 400;">Northwest Bank</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-600">Medium 500</span>
+                                <span style="font-family: 'Urbanist', sans-serif; font-weight: 500;">Northwest Bank</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Afacad Flux -->
+                    <div class="p-6 bg-[#030B0E] rounded-xl text-white">
+                        <h4 class="text-xl font-bold mb-4 afacad-flux">Afacad Flux</h4>
+                        <p class="mb-4 afacad-flux">
+                            Asegura que la experiencia diaria de uso de la plataforma sea eficiente y carente de fricciones, un requisito indispensable para emprendedores que valoran su tiempo.
+                        </p>
+                        <div class="space-y-2">
+                            <div class="flex justify-between afacad-flux">
+                                <span class="text-gray-300">Regular 400</span>
+                                <span>NB-1234-5678</span>
+                            </div>
+                            <div class="flex justify-between afacad-flux">
+                                <span class="text-gray-300">Medium 500</span>
+                                <span>$ 150,000.00 USD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de Navegación -->
+    <section class="py-12 bg-gray-100 border-t-4 border-[#114455]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="foda.html" class="bg-[#114455] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0a2d39] transition flex items-center">
+                <i class="fas fa-arrow-left mr-3"></i>Atrás
+            </a>
+            
+            <div class="text-center">
+                <p class="text-[#114455] font-bold text-lg">MÓDULO 3 DE 3: IDENTIDAD VISUAL</p>
+            </div>
+            
+            <a href="index-new.html" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition flex items-center">
+                Volver al Inicio
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 mountain-shape bg-[#DBDFE6] mr-4"></div>
+                        <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Institución financiera premium con más de 70 años de experiencia, ofreciendo servicios exclusivos para clientes de alto patrimonio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Contacto</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-[#493A1D] mr-3"></i>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-[#493A1D] mr-3"></i>
+                            <span>premium@northwestbank.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-[#493A1D] mr-3"></i>
+                            <span>Av. Reforma 123, CDMX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Miembros del Equipo</h4>
+                    <div class="space-y-3">
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">Zacarias Pérez Josefina Isabel</p>
+                            <p class="text-sm text-gray-400">Directora General</p>
+                        </div>
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">García Rafael Erik Santiago</p>
+                            <p class="text-sm text-gray-400">Director de Tecnología</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Northwest Bank. Todos los derechos reservados. Institución financiera regulada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

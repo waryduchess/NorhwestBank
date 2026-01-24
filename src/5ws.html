@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5W's - Northwest Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Urbanist', sans-serif;
+        }
+
+
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación  para editar-->
+    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
+                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index-new.html" class="hover:text-[#DBDFE6] transition">Inicio</a>
+                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition font-semibold">5W's</a>
+                    <a href="foda.html" class="hover:text-[#DBDFE6] transition">FODA</a>
+                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition">Marca</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
+                <a href="index-new.html" class="hover:text-[#DBDFE6] transition block">Inicio</a>
+                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block font-semibold">5W's</a>
+                <a href="foda.html" class="hover:text-[#DBDFE6] transition block">FODA</a>
+                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block">Marca</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 5W's Section -->
+    <section class="py-20 bg-white min-h-screen flex flex-col">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-[#114455] mb-4">ANÁLISIS 5W's</h1>
+                <div class="w-24 h-1 bg-[#493A1D] mx-auto"></div>
+                <p class="text-gray-600 mt-6 max-w-3xl mx-auto">
+                    Estrategia de posicionamiento para Northwest Bank en el mercado premium
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- WHAT -->
+                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
+                            <span class="font-bold text-xl">W</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#030B0E]">WHAT</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        <strong class="text-[#114455]">Northwest Bank (NB)</strong> es una institución financiera de perfil premium, enfocada en ofrecer productos bancarios exclusivos que integran finanzas, bienestar y estilo de vida de alto nivel.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg mt-4">
+                        <p class="text-sm text-gray-600">
+                            <i class="fas fa-mountain text-[#493A1D] mr-2"></i>
+                            El logo representa crecimiento, estabilidad y dirección, valores clave del banco.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WHERE -->
+                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
+                            <span class="font-bold text-xl">W</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#030B0E]">WHERE</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Opera a nivel nacional e internacional, con fuerte presencia en centros financieros estratégicos y plataformas digitales avanzadas.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-[#114455] font-semibold mb-2">Mercados objetivo:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-globe-americas text-[#493A1D] mr-2"></i>
+                                Centros financieros globales
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-mobile-alt text-[#493A1D] mr-2"></i>
+                                Plataformas digitales premium
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-city text-[#493A1D] mr-2"></i>
+                                Zonas de alto poder adquisitivo
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- WHO -->
+                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
+                            <span class="font-bold text-xl">W</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#030B0E]">WHO</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Dirigido a clientes con ingresos altos que buscan servicios financieros sofisticados, exclusivos y alineados con su estilo de vida.
+                    </p>
+                    <div class="mt-4 space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-user-tie text-[#114455] mr-3"></i>
+                            <span>Profesionistas de alto desempeño</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-chart-line text-[#114455] mr-3"></i>
+                            <span>Ejecutivos y empresarios</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-hand-holding-usd text-[#114455] mr-3"></i>
+                            <span>Inversionistas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WHY -->
+                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
+                            <span class="font-bold text-xl">W</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#030B0E]">WHY</h3>
+                    </div>
+                    <p class="text-gray-700">
+                        NB existe para atender a un segmento que demanda excelencia, discreción y valor agregado, ofreciendo soluciones financieras que respalden no solo su patrimonio, sino también su calidad de vida.
+                    </p>
+                    <div class="mt-4 p-4 bg-white rounded-lg">
+                        <p class="text-sm text-[#493A1D]">
+                            <i class="fas fa-star mr-2"></i>
+                            Atención personalizada: gestores que ayudan a planear viajes y optimizar gastos en el extranjero.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- WHEN -->
+                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
+                            <span class="font-bold text-xl">W</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#030B0E]">WHEN</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Surge en un contexto de transformación financiera global, donde los clientes demandan servicios bancarios flexibles, digitales y personalizados.
+                    </p>
+                    <div class="mt-4">
+                        <p class="text-[#114455] font-semibold">Utilización:</p>
+                        <p class="text-gray-600">
+                            Se utiliza de forma continua, tanto para operaciones diarias como para la planificación financiera de largo plazo.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LOGO SIMBOLOGÍA -->
+                <div class="bg-gradient-to-br from-[#114455] to-[#030B0E] p-8 rounded-xl text-white">
+                    <div class="text-center mb-6">
+                        <img src="logo.png" alt="Logo" class="w-20 h-20 mx-auto mb-4">
+                        <h3 class="text-2xl font-bold">SIMBOLOGÍA</h3>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-mountain mt-1 mr-3 text-[#DBDFE6]"></i>
+                            <div>
+                                <h4 class="font-bold">Crecimiento</h4>
+                                <p class="text-sm text-gray-300">Progreso financiero constante</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-shield-alt mt-1 mr-3 text-[#DBDFE6]"></i>
+                            <div>
+                                <h4 class="font-bold">Estabilidad</h4>
+                                <p class="text-sm text-gray-300">Solidez institucional</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-bullseye mt-1 mr-3 text-[#DBDFE6]"></i>
+                            <div>
+                                <h4 class="font-bold">Metas Altas</h4>
+                                <p class="text-sm text-gray-300">Aspiración a la excelencia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-lock mt-1 mr-3 text-[#DBDFE6]"></i>
+                            <div>
+                                <h4 class="font-bold">Seguridad</h4>
+                                <p class="text-sm text-gray-300">Protección a largo plazo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones de Navegación -->
+    <section class="py-12 bg-gray-100 border-t-4 border-[#114455]">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="index-new.html" class="bg-[#114455] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0a2d39] transition flex items-center">
+                <i class="fas fa-arrow-left mr-3"></i>Atrás
+            </a>
+            
+            <div class="text-center">
+                <p class="text-[#114455] font-bold text-lg">MÓDULO 1 DE 3: ANÁLISIS 5W'S</p>
+            </div>
+            
+            <a href="foda.html" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition flex items-center">
+                Siguiente
+                <i class="fas fa-arrow-right ml-3"></i>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <div class="w-10 h-10 mountain-shape bg-[#DBDFE6] mr-4"></div>
+                        <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Institución financiera premium con más de 70 años de experiencia, ofreciendo servicios exclusivos para clientes de alto patrimonio.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Contacto</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-[#493A1D] mr-3"></i>
+                            <span>+52 55 1234 5678</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-[#493A1D] mr-3"></i>
+                            <span>premium@northwestbank.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-[#493A1D] mr-3"></i>
+                            <span>Av. Reforma 123, CDMX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Miembros del Equipo</h4>
+                    <div class="space-y-3">
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">Zacarias Pérez Josefina Isabel</p>
+                            <p class="text-sm text-gray-400">Directora General</p>
+                        </div>
+                        <div class="bg-[#114455]/30 p-3 rounded-lg">
+                            <p class="font-semibold">García Rafael Erik Santiago</p>
+                            <p class="text-sm text-gray-400">Director de Tecnología</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400">
+                <p>© 2024 Northwest Bank. Todos los derechos reservados. Institución financiera regulada.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
