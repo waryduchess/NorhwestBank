@@ -1,10 +1,10 @@
-# Northwest Bank 
+https://github.com/waryduchess/NorhwestBank.git# Northwest Bank 
 
 
 ### Para Windows:
 ```cmd
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/northwest-bank.git
+git clone https://github.com/waryduchess/NorhwestBank.git
 
 # 2. Entrar a la carpeta
 cd northwest-bank
