@@ -14,11 +14,13 @@
         <div class="slide-dot" onclick="goToSlide(1)"></div>
         <div class="slide-dot" onclick="goToSlide(2)"></div>
         <div class="slide-dot" onclick="goToSlide(3)"></div>
+        <div class="slide-dot" onclick="goToSlide(4)"></div>
+        <div class="slide-dot" onclick="goToSlide(5)"></div>
     </div>
 
     <!-- Número de diapositiva -->
     <div class="slide-number">
-        <span id="currentSlide">1</span> / 4
+        <span id="currentSlide">1</span> / 6
     </div>
 
     <!-- Navegación flotante -->
@@ -73,7 +75,7 @@
                 <!-- Grid de tarjetas preview -->
                 <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
                     <!-- Orbe -->
-                    <div class="animate-slide-in-up delay-600 hover-lift cursor-pointer" onclick="goToSlide(1)">
+                    <div class="animate-slide-in-up delay-600 hover-lift cursor-pointer" onclick="goToSlide(3)">
                         <div class="bg-gradient-to-br from-[#E8F2FB] to-[#ABD3F2] rounded-2xl p-6 text-center">
                             <img src="tarjeta_uno.png" alt="Tarjeta Orbe" class="w-full h-auto rounded-xl shadow-2xl mb-4 animate-float">
                             <h3 class="text-[#0D202B] text-2xl font-bold">ORBE</h3>
@@ -82,7 +84,7 @@
                     </div>
 
                     <!-- Silverstone -->
-                    <div class="animate-slide-in-up delay-700 hover-lift cursor-pointer" onclick="goToSlide(2)">
+                    <div class="animate-slide-in-up delay-700 hover-lift cursor-pointer" onclick="goToSlide(4)">
                         <div class="bg-gradient-to-br from-[#82878A] to-[#D1D1D1] rounded-2xl p-6 text-center">
                             <img src="tarrejta_dos.png" alt="Tarjeta Silverstone" class="w-full h-auto rounded-xl shadow-2xl mb-4 animate-float" style="animation-delay: 0.3s;">
                             <h3 class="text-[#1A1A1B] text-2xl font-bold">SILVERSTONE</h3>
@@ -91,7 +93,7 @@
                     </div>
 
                     <!-- Imperium -->
-                    <div class="animate-slide-in-up delay-800 hover-lift cursor-pointer" onclick="goToSlide(3)">
+                    <div class="animate-slide-in-up delay-800 hover-lift cursor-pointer" onclick="goToSlide(5)">
                         <div class="bg-gradient-to-br from-[#1A1A1B] to-[#C5A059]/30 rounded-2xl p-6 text-center border border-[#C5A059]/50">
                             <img src="Tarjeta_tres.png" alt="Tarjeta Imperium" class="w-full h-auto rounded-xl shadow-2xl mb-4 animate-float" style="animation-delay: 0.6s;">
                             <h3 class="text-[#C5A059] text-2xl font-bold">IMPERIUM</h3>
@@ -127,7 +129,214 @@
             </div>
         </section>
 
-        <!-- DIAPOSITIVA 2: Tarjeta ORBE -->
+        <!-- DIAPOSITIVA 2: 5W's de Tarjetas -->
+        <section id="slide2" class="slide bg-gradient-to-br from-[#0D202B] via-[#121D24] to-[#1A1A1B] snap-start">
+            <div class="container mx-auto px-6 py-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-zoom-in">
+                        <i class="fas fa-question-circle mr-3 text-[#C5A059]"></i>Análisis 5W's
+                    </h2>
+                    <div class="w-24 h-1 bg-[#C5A059] mx-auto animate-slide-reveal delay-200"></div>
+                    <p class="text-gray-400 mt-4 animate-fade-in delay-300">Estrategia del ecosistema de tarjetas</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- WHAT -->
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#C5A059]/30 animate-slide-in-up delay-400 hover-lift">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-[#C5A059] rounded-xl flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">W</span>
+                            </div>
+                            <h3 class="text-[#C5A059] font-bold text-2xl">WHAT</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Lanzamiento de un ecosistema de <strong class="text-white">tres tarjetas de crédito exclusivas</strong> que integran beneficios de movilidad global, gestión de capital y recompensas de estilo de vida.
+                        </p>
+                    </div>
+
+                    <!-- WHERE -->
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#C5A059]/30 animate-slide-in-up delay-500 hover-lift">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-[#C5A059] rounded-xl flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">W</span>
+                            </div>
+                            <h3 class="text-[#C5A059] font-bold text-2xl">WHERE</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Campaña omnicanal con fuerte presencia en <strong class="text-white">salas VIP de aeropuertos</strong>, centros de negocios globales y plataformas digitales de banca privada.
+                        </p>
+                    </div>
+
+                    <!-- WHO -->
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#C5A059]/30 animate-slide-in-up delay-600 hover-lift">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-[#C5A059] rounded-xl flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">W</span>
+                            </div>
+                            <h3 class="text-[#C5A059] font-bold text-2xl">WHO</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            <strong class="text-white">Profesionistas de alto desempeño</strong> y empresarios que buscan una herramienta financiera que no solo otorgue crédito, sino que simplifique su vida internacional.
+                        </p>
+                    </div>
+
+                    <!-- WHY -->
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#C5A059]/30 animate-slide-in-up delay-700 hover-lift md:col-span-1 lg:col-span-1">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-[#C5A059] rounded-xl flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">W</span>
+                            </div>
+                            <h3 class="text-[#C5A059] font-bold text-2xl">WHY</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            Para materializar la promesa de <strong class="text-white">"estilo de vida premium"</strong> del banco, ofreciendo productos tangibles que resuelvan la necesidad de liquidez y prestigio.
+                        </p>
+                    </div>
+
+                    <!-- WHEN -->
+                    <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#C5A059]/30 animate-slide-in-up delay-800 hover-lift md:col-span-2 lg:col-span-2">
+                        <div class="flex items-center mb-4">
+                            <div class="w-14 h-14 bg-[#C5A059] rounded-xl flex items-center justify-center mr-4">
+                                <span class="text-white font-bold text-xl">W</span>
+                            </div>
+                            <h3 class="text-[#C5A059] font-bold text-2xl">WHEN</h3>
+                        </div>
+                        <p class="text-gray-300 leading-relaxed">
+                            El despliegue inicia en el <strong class="text-white">primer trimestre</strong>, aprovechando la temporada de planificación de viajes y presupuestos corporativos anuales.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+                <i class="fas fa-chevron-down text-2xl text-white/50"></i>
+            </div>
+        </section>
+
+        <!-- DIAPOSITIVA 3: FODA de Tarjetas -->
+        <section id="slide3" class="slide bg-gradient-to-br from-[#1A1A1B] via-[#0D202B] to-[#121D24] snap-start">
+            <div class="container mx-auto px-6 py-12">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-zoom-in">
+                        <i class="fas fa-chart-pie mr-3 text-[#C5A059]"></i>Análisis FODA
+                    </h2>
+                    <div class="w-24 h-1 bg-[#C5A059] mx-auto animate-slide-reveal delay-200"></div>
+                    <p class="text-gray-400 mt-4 animate-fade-in delay-300">Evaluación estratégica del ecosistema de tarjetas</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <!-- Fortalezas -->
+                    <div class="animate-slide-in-left delay-400">
+                        <div class="bg-gradient-to-br from-success/20 to-success/5 border border-success/30 rounded-2xl overflow-hidden hover-lift h-full">
+                            <div class="bg-success p-4 flex items-center">
+                                <i class="fas fa-trophy text-xl mr-3"></i>
+                                <h3 class="text-xl font-bold">FORTALEZAS</h3>
+                            </div>
+                            <div class="p-5 space-y-3">
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-check text-success mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Imagen sólida de lujo y autoridad</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-check text-success mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Beneficios premium tangibles</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-check text-success mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Línea de crédito alta y flexible</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-check text-success mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Atención personalizada</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-check text-success mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Alta percepción de estatus y pertenencia</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oportunidades -->
+                    <div class="animate-slide-in-right delay-500">
+                        <div class="bg-gradient-to-br from-info/20 to-info/5 border border-info/30 rounded-2xl overflow-hidden hover-lift h-full">
+                            <div class="bg-info p-4 flex items-center">
+                                <i class="fas fa-lightbulb text-xl mr-3"></i>
+                                <h3 class="text-xl font-bold">OPORTUNIDADES</h3>
+                            </div>
+                            <div class="p-5 space-y-3">
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-arrow-up text-info mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Fidelización de clientes de alto valor</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-arrow-up text-info mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Posicionamiento como tarjeta de referencia en banca privada</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-arrow-up text-info mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Alianzas con marcas y servicios de lujo</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-arrow-up text-info mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Incremento del uso internacional</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Debilidades -->
+                    <div class="animate-slide-in-left delay-600">
+                        <div class="bg-gradient-to-br from-error/20 to-error/5 border border-error/30 rounded-2xl overflow-hidden hover-lift h-full">
+                            <div class="bg-error p-4 flex items-center">
+                                <i class="fas fa-exclamation-triangle text-xl mr-3"></i>
+                                <h3 class="text-xl font-bold">DEBILIDADES</h3>
+                            </div>
+                            <div class="p-5 space-y-3">
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-minus text-error mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Segmento reducido y altamente selectivo</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-minus text-error mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Expectativa elevada del cliente</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-minus text-error mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Costos operativos superiores al promedio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amenazas -->
+                    <div class="animate-slide-in-right delay-700">
+                        <div class="bg-gradient-to-br from-warning/20 to-warning/5 border border-warning/30 rounded-2xl overflow-hidden hover-lift h-full">
+                            <div class="bg-warning text-gray-900 p-4 flex items-center">
+                                <i class="fas fa-shield-alt text-xl mr-3"></i>
+                                <h3 class="text-xl font-bold">AMENAZAS</h3>
+                            </div>
+                            <div class="p-5 space-y-3">
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-exclamation text-warning mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Cambios regulatorios del sector financiero</span>
+                                </div>
+                                <div class="flex items-center bg-white/5 p-3 rounded-lg">
+                                    <i class="fas fa-exclamation text-warning mr-3"></i>
+                                    <span class="text-gray-300 text-sm">Clientes con baja tolerancia a fallos en el servicio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+                <i class="fas fa-chevron-down text-2xl text-white/50"></i>
+            </div>
+        </section>
+
+        <!-- DIAPOSITIVA 4: Tarjeta ORBE -->
         <section id="slide2" class="slide bg-gradient-to-br from-[#0D202B] via-[#121D24] to-[#ABD3F2]/20 snap-start">
             <div class="container mx-auto px-6 py-12">
                 <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -140,6 +349,38 @@
                         <div class="mt-6 space-y-2">
                             <h2 class="text-4xl font-bold text-white">TARJETA <span class="text-[#ABD3F2]">ORBE</span></h2>
                             <p class="text-[#E8F2FB] text-xl italic">"Tu mundo, una sola tarjeta"</p>
+                        </div>
+
+                        <!-- Paleta de colores Orbe -->
+                        <div class="mt-6 animate-slide-in-up delay-500">
+                            <p class="text-gray-400 text-sm mb-3 font-semibold">Paleta de Colores</p>
+                            <div class="flex justify-center gap-3">
+                                <div class="text-center">
+                                    <div class="w-12 h-12 rounded-full bg-[#E8F2FB] mx-auto mb-1 border border-white/30 shadow-lg"></div>
+                                    <p class="text-[10px] text-gray-400">Celeste Pastel</p>
+                                    <p class="text-[9px] text-[#ABD3F2]">#E8F2FB</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 rounded-full bg-[#ABD3F2] mx-auto mb-1 shadow-lg"></div>
+                                    <p class="text-[10px] text-gray-400">Cielo Diurno</p>
+                                    <p class="text-[9px] text-[#ABD3F2]">#ABD3F2</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 rounded-full bg-[#82878A] mx-auto mb-1 shadow-lg"></div>
+                                    <p class="text-[10px] text-gray-400">Gris Neutro</p>
+                                    <p class="text-[9px] text-[#ABD3F2]">#82878A</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 rounded-full bg-[#0D202B] mx-auto mb-1 border border-white/20 shadow-lg"></div>
+                                    <p class="text-[10px] text-gray-400">Noche Profunda</p>
+                                    <p class="text-[9px] text-[#ABD3F2]">#0D202B</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-12 h-12 rounded-full bg-[#121D24] mx-auto mb-1 border border-white/20 shadow-lg"></div>
+                                    <p class="text-[10px] text-gray-400">Negro Azulado</p>
+                                    <p class="text-[9px] text-[#ABD3F2]">#121D24</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -192,8 +433,8 @@
             </div>
         </section>
 
-        <!-- DIAPOSITIVA 3: Tarjeta SILVERSTONE -->
-        <section id="slide3" class="slide bg-gradient-to-br from-[#82878A]/30 via-[#1A1A1B] to-[#D1D1D1]/10 snap-start">
+        <!-- DIAPOSITIVA 5: Tarjeta SILVERSTONE -->
+        <section id="slide5" class="slide bg-gradient-to-br from-[#82878A]/30 via-[#1A1A1B] to-[#D1D1D1]/10 snap-start">
             <div class="container mx-auto px-6 py-12">
                 <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     <!-- Información -->
@@ -268,8 +509,8 @@
             </div>
         </section>
 
-        <!-- DIAPOSITIVA 4: Tarjeta IMPERIUM -->
-        <section id="slide4" class="slide bg-gradient-to-br from-[#1A1A1B] via-[#0D202B] to-[#C5A059]/20 snap-start">
+        <!-- DIAPOSITIVA 6: Tarjeta IMPERIUM -->
+        <section id="slide6" class="slide bg-gradient-to-br from-[#1A1A1B] via-[#0D202B] to-[#C5A059]/20 snap-start">
             <div class="container mx-auto px-6 py-12">
                 <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     <!-- Imagen de tarjeta -->
