@@ -22,3 +22,4 @@ node_modules/.bin/tailwind
 node_modules/.bin/tailwindcss
 
 node_modules/.bin/update-browserslist-db
+dist/output.css
