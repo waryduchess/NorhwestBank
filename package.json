@@ -8,12 +8,16 @@
     "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
     "start": "npm run dev"
   },
-  "keywords": ["arte", "exposicion", "tailwind"],
+  "keywords": [
+    "arte",
+    "exposicion",
+    "tailwind"
+  ],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.27",
-    "tailwindcss": "^3.3.3"
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19"
   }
 }
