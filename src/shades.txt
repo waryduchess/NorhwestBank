@@ -1,0 +1,59 @@
+Primary Colors (Primarios)
+
+    primary-100: HEX #b5c5ca, RGB rgb(181, 197, 202)
+
+    primary-200: HEX #92a9b1, RGB rgb(146, 169, 177)
+
+    primary-300: HEX #60828d, RGB rgb(96, 130, 141)
+
+    primary-400: HEX #416977, RGB rgb(65, 105, 119)
+
+    primary-500: HEX #114455, RGB rgb(17, 68, 85)
+
+    primary-600: HEX #0f3e4d, RGB rgb(15, 62, 77)
+
+    primary-700: HEX #0c303c, RGB rgb(12, 48, 60)
+
+    primary-800: HEX #09252f, RGB rgb(9, 37, 47)
+
+    primary-900: HEX #071d24, RGB rgb(7, 29, 36)
+
+Secondary Colors (Secundarios)
+
+    secondary-100: HEX #f4f5f7, RGB rgb(244, 245, 247)
+
+    secondary-200: HEX #eef0f4, RGB rgb(238, 240, 244)
+
+    secondary-300: HEX #e7eaee, RGB rgb(231, 234, 238)
+
+    secondary-400: HEX #e2e5eb, RGB rgb(226, 229, 235)
+
+    secondary-500: HEX #dbdfe6, RGB rgb(219, 223, 230)
+
+    secondary-600: HEX #c7cbd1, RGB rgb(199, 203, 209)
+
+    secondary-700: HEX #9b9ea3, RGB rgb(155, 158, 163)
+
+    secondary-800: HEX #787b7f, RGB rgb(120, 123, 127)
+
+    secondary-900: HEX #5c5e61, RGB rgb(92, 94, 97)
+
+Accent Colors (Acentos)
+
+    accent-100: HEX #c7c2b9, RGB rgb(199, 194, 185)
+
+    accent-200: HEX #aba497, RGB rgb(171, 164, 151)
+
+    accent-300: HEX #857b68, RGB rgb(133, 123, 104)
+
+    accent-400: HEX #6d614a, RGB rgb(109, 97, 74)
+
+    accent-500: HEX #493a1d, RGB rgb(73, 58, 29)
+
+    accent-600: HEX #42351a, RGB rgb(66, 53, 26)
+
+    accent-700: HEX #342915, RGB rgb(52, 41, 21)
+
+    accent-800: HEX #282010, RGB rgb(40, 32, 16)
+
+    accent-900: HEX #1f180c, RGB rgb(31, 24, 12)

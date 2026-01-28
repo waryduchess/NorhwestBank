@@ -77,40 +77,196 @@
 
                     <div class="grid md:grid-cols-3 gap-6 mb-12">
                         <!-- Color Primario -->
-                        <div class="animate-slide-in-up delay-600 hover-lift">
-                            <div class="glass-card overflow-hidden">
-                                <div class="h-32 bg-primary flex items-center justify-center">
+                        <div class="animate-slide-in-up delay-600">
+                            <div class="glass-card overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleShades('primary')">
+                                <div class="h-32 bg-primary flex items-center justify-center relative">
                                     <span class="text-white text-2xl font-bold">#114455</span>
+                                    <i class="fas fa-chevron-down absolute bottom-2 right-4 text-white/70 transition-transform duration-300" id="primary-icon"></i>
                                 </div>
                                 <div class="p-6">
-                                    <h4 class="font-bold text-white text-xl mb-2">Primario</h4>
+                                    <h4 class="font-bold text-white text-xl mb-2">Primario <span class="text-sm text-accent font-normal">(clic para ver shades)</span></h4>
                                     <p class="text-gray-400 text-sm">Tono sobrio y elegante que genera sensación de respaldo y control financiero.</p>
+                                </div>
+                            </div>
+                            <!-- Shades Primario -->
+                            <div id="primary-shades" class="hidden mt-4 glass-card p-4 animate-fade-in">
+                                <h5 class="text-secondary font-semibold mb-3 text-sm">Primary Shades</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #b5c5ca;"></div>
+                                        <p class="text-xs text-gray-400">100</p>
+                                        <p class="text-xs text-white">#b5c5ca</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #92a9b1;"></div>
+                                        <p class="text-xs text-gray-400">200</p>
+                                        <p class="text-xs text-white">#92a9b1</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #60828d;"></div>
+                                        <p class="text-xs text-gray-400">300</p>
+                                        <p class="text-xs text-white">#60828d</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #416977;"></div>
+                                        <p class="text-xs text-gray-400">400</p>
+                                        <p class="text-xs text-white">#416977</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1 ring-2 ring-accent" style="background-color: #114455;"></div>
+                                        <p class="text-xs text-accent font-bold">500</p>
+                                        <p class="text-xs text-white">#114455</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #0f3e4d;"></div>
+                                        <p class="text-xs text-gray-400">600</p>
+                                        <p class="text-xs text-white">#0f3e4d</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #0c303c;"></div>
+                                        <p class="text-xs text-gray-400">700</p>
+                                        <p class="text-xs text-white">#0c303c</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #09252f;"></div>
+                                        <p class="text-xs text-gray-400">800</p>
+                                        <p class="text-xs text-white">#09252f</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #071d24;"></div>
+                                        <p class="text-xs text-gray-400">900</p>
+                                        <p class="text-xs text-white">#071d24</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Color Secundario -->
-                        <div class="animate-slide-in-up delay-700 hover-lift">
-                            <div class="glass-card overflow-hidden">
-                                <div class="h-32 bg-secondary flex items-center justify-center">
+                        <div class="animate-slide-in-up delay-700">
+                            <div class="glass-card overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleShades('secondary')">
+                                <div class="h-32 bg-secondary flex items-center justify-center relative">
                                     <span class="text-dark text-2xl font-bold">#DBDFE6</span>
+                                    <i class="fas fa-chevron-down absolute bottom-2 right-4 text-dark/70 transition-transform duration-300" id="secondary-icon"></i>
                                 </div>
                                 <div class="p-6">
-                                    <h4 class="font-bold text-white text-xl mb-2">Secundario</h4>
+                                    <h4 class="font-bold text-white text-xl mb-2">Secundario <span class="text-sm text-accent font-normal">(clic para ver shades)</span></h4>
                                     <p class="text-gray-400 text-sm">Alto contraste accesible (niveles AA y AAA) para textos y elementos.</p>
+                                </div>
+                            </div>
+                            <!-- Shades Secundario -->
+                            <div id="secondary-shades" class="hidden mt-4 glass-card p-4 animate-fade-in">
+                                <h5 class="text-secondary font-semibold mb-3 text-sm">Secondary Shades</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #f4f5f7;"></div>
+                                        <p class="text-xs text-gray-400">100</p>
+                                        <p class="text-xs text-white">#f4f5f7</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #eef0f4;"></div>
+                                        <p class="text-xs text-gray-400">200</p>
+                                        <p class="text-xs text-white">#eef0f4</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #e7eaee;"></div>
+                                        <p class="text-xs text-gray-400">300</p>
+                                        <p class="text-xs text-white">#e7eaee</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #e2e5eb;"></div>
+                                        <p class="text-xs text-gray-400">400</p>
+                                        <p class="text-xs text-white">#e2e5eb</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1 ring-2 ring-accent" style="background-color: #dbdfe6;"></div>
+                                        <p class="text-xs text-accent font-bold">500</p>
+                                        <p class="text-xs text-white">#dbdfe6</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #c7cbd1;"></div>
+                                        <p class="text-xs text-gray-400">600</p>
+                                        <p class="text-xs text-white">#c7cbd1</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #9b9ea3;"></div>
+                                        <p class="text-xs text-gray-400">700</p>
+                                        <p class="text-xs text-white">#9b9ea3</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #787b7f;"></div>
+                                        <p class="text-xs text-gray-400">800</p>
+                                        <p class="text-xs text-white">#787b7f</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #5c5e61;"></div>
+                                        <p class="text-xs text-gray-400">900</p>
+                                        <p class="text-xs text-white">#5c5e61</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Color Acento -->
-                        <div class="animate-slide-in-up delay-800 hover-lift">
-                            <div class="glass-card overflow-hidden">
-                                <div class="h-32 bg-accent flex items-center justify-center">
+                        <div class="animate-slide-in-up delay-800">
+                            <div class="glass-card overflow-hidden cursor-pointer transition-all duration-300" onclick="toggleShades('accent')">
+                                <div class="h-32 bg-accent flex items-center justify-center relative">
                                     <span class="text-white text-2xl font-bold">#493A1D</span>
+                                    <i class="fas fa-chevron-down absolute bottom-2 right-4 text-white/70 transition-transform duration-300" id="accent-icon"></i>
                                 </div>
                                 <div class="p-6">
-                                    <h4 class="font-bold text-white text-xl mb-2">Acento</h4>
+                                    <h4 class="font-bold text-white text-xl mb-2">Acento <span class="text-sm text-accent font-normal">(clic para ver shades)</span></h4>
                                     <p class="text-gray-400 text-sm">Usado en botones y acciones clave de forma controlada.</p>
+                                </div>
+                            </div>
+                            <!-- Shades Acento -->
+                            <div id="accent-shades" class="hidden mt-4 glass-card p-4 animate-fade-in">
+                                <h5 class="text-secondary font-semibold mb-3 text-sm">Accent Shades</h5>
+                                <div class="grid grid-cols-3 gap-2">
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #c7c2b9;"></div>
+                                        <p class="text-xs text-gray-400">100</p>
+                                        <p class="text-xs text-white">#c7c2b9</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #aba497;"></div>
+                                        <p class="text-xs text-gray-400">200</p>
+                                        <p class="text-xs text-white">#aba497</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #857b68;"></div>
+                                        <p class="text-xs text-gray-400">300</p>
+                                        <p class="text-xs text-white">#857b68</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #6d614a;"></div>
+                                        <p class="text-xs text-gray-400">400</p>
+                                        <p class="text-xs text-white">#6d614a</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1 ring-2 ring-secondary" style="background-color: #493a1d;"></div>
+                                        <p class="text-xs text-accent font-bold">500</p>
+                                        <p class="text-xs text-white">#493a1d</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #42351a;"></div>
+                                        <p class="text-xs text-gray-400">600</p>
+                                        <p class="text-xs text-white">#42351a</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #342915;"></div>
+                                        <p class="text-xs text-gray-400">700</p>
+                                        <p class="text-xs text-white">#342915</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #282010;"></div>
+                                        <p class="text-xs text-gray-400">800</p>
+                                        <p class="text-xs text-white">#282010</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="h-12 rounded-lg mb-1" style="background-color: #1f180c;"></div>
+                                        <p class="text-xs text-gray-400">900</p>
+                                        <p class="text-xs text-white">#1f180c</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -394,6 +550,19 @@
 
         function toggleMobileMenu() {
             document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+
+        function toggleShades(color) {
+            const shadesDiv = document.getElementById(color + '-shades');
+            const icon = document.getElementById(color + '-icon');
+
+            if (shadesDiv.classList.contains('hidden')) {
+                shadesDiv.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                shadesDiv.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
         }
     </script>
 </body>
