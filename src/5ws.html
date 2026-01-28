@@ -4,297 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>5W's - Northwest Bank</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Urbanist', sans-serif;
-        }
-
-
-    </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navegación  para editar-->
-    <nav class="bg-[#114455] text-white sticky top-0 z-50 shadow-lg">
+<body class="bg-dark text-white overflow-x-hidden">
+    <!-- Indicador de diapositivas -->
+    <div class="slide-indicator hidden md:flex">
+        <div class="slide-dot active" onclick="goToSlide(0)"></div>
+        <div class="slide-dot" onclick="goToSlide(1)"></div>
+        <div class="slide-dot" onclick="goToSlide(2)"></div>
+    </div>
+
+    <!-- Número de diapositiva -->
+    <div class="slide-number">
+        <span id="currentSlide">1</span> / 3
+    </div>
+
+    <!-- Navegación flotante -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-primary/90 backdrop-blur-md border-b border-white/10">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
                 <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
-                    <img src="logo.png" alt="Logo" class="h-14 w-auto" style="aspect-ratio: 636/294;">
-                    <span class="text-2xl font-bold">NORTHWEST BANK</span>
+                    <img src="logo.png" alt="Logo" class="h-10 w-auto" style="aspect-ratio: 636/294;">
+                    <span class="text-lg font-bold text-white">NORTHWEST BANK</span>
                 </a>
-                <div class="hidden md:flex space-x-8">
-                    <a href="index-new.html" class="hover:text-[#DBDFE6] transition">Inicio</a>
-                    <a href="5ws.html" class="hover:text-[#DBDFE6] transition font-semibold">5W's</a>
-                    <a href="foda.html" class="hover:text-[#DBDFE6] transition">FODA</a>
-                    <a href="servicios.html" class="hover:text-[#DBDFE6] transition">Marca</a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index-new.html" class="text-white/80 hover:text-white transition">Inicio</a>
+                    <a href="5ws.html" class="text-white font-semibold border-b-2 border-accent pb-1">5W's</a>
+                    <a href="foda.html" class="text-white/80 hover:text-white transition">FODA</a>
+                    <a href="servicios.html" class="text-white/80 hover:text-white transition">Marca</a>
                 </div>
-                <button class="md:hidden text-2xl" onclick="toggleMobileMenu()">
+                <button class="md:hidden text-white text-xl" onclick="toggleMobileMenu()">
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
             <div id="mobileMenu" class="hidden md:hidden flex-col mt-4 space-y-4 pb-4">
-                <a href="index-new.html" class="hover:text-[#DBDFE6] transition block">Inicio</a>
-                <a href="5ws.html" class="hover:text-[#DBDFE6] transition block font-semibold">5W's</a>
-                <a href="foda.html" class="hover:text-[#DBDFE6] transition block">FODA</a>
-                <a href="servicios.html" class="hover:text-[#DBDFE6] transition block">Marca</a>
+                <a href="index-new.html" class="text-white/80 hover:text-white transition block">Inicio</a>
+                <a href="5ws.html" class="text-white font-semibold block">5W's</a>
+                <a href="foda.html" class="text-white/80 hover:text-white transition block">FODA</a>
+                <a href="servicios.html" class="text-white/80 hover:text-white transition block">Marca</a>
             </div>
         </div>
     </nav>
 
-    <!-- 5W's Section -->
-    <section class="py-20 bg-white min-h-screen flex flex-col">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h1 class="text-4xl font-bold text-[#114455] mb-4">ANÁLISIS 5W's</h1>
-                <div class="w-24 h-1 bg-[#493A1D] mx-auto"></div>
-                <p class="text-gray-600 mt-6 max-w-3xl mx-auto">
-                    Estrategia de posicionamiento para Northwest Bank en el mercado premium
-                </p>
+    <!-- Contenedor de diapositivas -->
+    <div id="slideContainer" class="slide-container hide-scrollbar snap-y pt-16">
+
+        <!-- DIAPOSITIVA 1: Título y WHAT/WHERE -->
+        <section id="slide1" class="slide gradient-bg bg-pattern snap-start">
+            <div class="container mx-auto px-6 py-12">
+                <!-- Encabezado -->
+                <div class="text-center mb-12">
+                    <div class="inline-block bg-accent/20 rounded-full px-6 py-2 mb-4 animate-fade-in">
+                        <span class="text-accent font-semibold">MÓDULO 1 DE 3</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 animate-zoom-in-bounce delay-200">
+                        ANÁLISIS 5W's
+                    </h1>
+                    <div class="w-32 h-1 bg-accent mx-auto animate-slide-reveal delay-400"></div>
+                    <p class="text-secondary mt-6 text-lg animate-fade-in delay-500">
+                        Estrategia de posicionamiento para Northwest Bank en el mercado premium
+                    </p>
+                </div>
+
+                <!-- Grid WHAT y WHERE -->
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- WHAT -->
+                    <div class="glass-card p-8 animate-slide-in-left delay-600 hover-lift">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mr-4 animate-float">
+                                <span class="font-bold text-2xl text-white">W</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">WHAT</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            <strong class="text-secondary">Northwest Bank (NB)</strong> es una institución financiera de perfil premium, enfocada en ofrecer productos bancarios exclusivos que integran finanzas, bienestar y estilo de vida de alto nivel.
+                        </p>
+                        <div class="bg-white/5 p-4 rounded-xl border-l-4 border-accent">
+                            <p class="text-sm text-gray-400">
+                                <i class="fas fa-mountain text-accent mr-2"></i>
+                                El logo representa crecimiento, estabilidad y dirección, valores clave del banco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- WHERE -->
+                    <div class="glass-card p-8 animate-slide-in-right delay-700 hover-lift">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mr-4 animate-float" style="animation-delay: 0.5s;">
+                                <span class="font-bold text-2xl text-white">W</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">WHERE</h3>
+                        </div>
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Opera a nivel nacional e internacional, con fuerte presencia en centros financieros estratégicos y plataformas digitales avanzadas.
+                        </p>
+                        <div class="space-y-3">
+                            <p class="text-secondary font-semibold mb-3">Mercados objetivo:</p>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-globe-americas text-accent mr-3 w-5"></i>
+                                <span>Centros financieros globales</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-mobile-alt text-accent mr-3 w-5"></i>
+                                <span>Plataformas digitales premium</span>
+                            </div>
+                            <div class="flex items-center text-gray-300">
+                                <i class="fas fa-city text-accent mr-3 w-5"></i>
+                                <span>Zonas de alto poder adquisitivo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- WHAT -->
-                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
-                            <span class="font-bold text-xl">W</span>
+            <!-- Indicador de scroll -->
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
+                <i class="fas fa-chevron-down text-2xl text-white/50"></i>
+            </div>
+        </section>
+
+        <!-- DIAPOSITIVA 2: WHO y WHY -->
+        <section id="slide2" class="slide gradient-bg-alt bg-pattern snap-start">
+            <div class="container mx-auto px-6 py-12">
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <!-- WHO -->
+                    <div class="glass-card p-8 animate-slide-in-left delay-300 hover-lift">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mr-4 animate-float">
+                                <span class="font-bold text-2xl text-white">W</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">WHO</h3>
                         </div>
-                        <h3 class="text-2xl font-bold text-[#030B0E]">WHAT</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        <strong class="text-[#114455]">Northwest Bank (NB)</strong> es una institución financiera de perfil premium, enfocada en ofrecer productos bancarios exclusivos que integran finanzas, bienestar y estilo de vida de alto nivel.
-                    </p>
-                    <div class="bg-white p-4 rounded-lg mt-4">
-                        <p class="text-sm text-gray-600">
-                            <i class="fas fa-mountain text-[#493A1D] mr-2"></i>
-                            El logo representa crecimiento, estabilidad y dirección, valores clave del banco.
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            Dirigido a clientes con ingresos altos que buscan servicios financieros sofisticados, exclusivos y alineados con su estilo de vida.
                         </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center bg-white/5 p-4 rounded-xl animate-slide-in-right delay-400">
+                                <div class="w-12 h-12 bg-primary/50 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-user-tie text-secondary"></i>
+                                </div>
+                                <span class="text-white">Profesionistas de alto desempeño</span>
+                            </div>
+                            <div class="flex items-center bg-white/5 p-4 rounded-xl animate-slide-in-right delay-500">
+                                <div class="w-12 h-12 bg-primary/50 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-chart-line text-secondary"></i>
+                                </div>
+                                <span class="text-white">Ejecutivos y empresarios</span>
+                            </div>
+                            <div class="flex items-center bg-white/5 p-4 rounded-xl animate-slide-in-right delay-600">
+                                <div class="w-12 h-12 bg-primary/50 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-hand-holding-usd text-secondary"></i>
+                                </div>
+                                <span class="text-white">Inversionistas</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- WHERE -->
-                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
-                            <span class="font-bold text-xl">W</span>
+                    <!-- WHY -->
+                    <div class="glass-card p-8 animate-slide-in-right delay-400 hover-lift">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mr-4 animate-float" style="animation-delay: 0.5s;">
+                                <span class="font-bold text-2xl text-white">W</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">WHY</h3>
                         </div>
-                        <h3 class="text-2xl font-bold text-[#030B0E]">WHERE</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Opera a nivel nacional e internacional, con fuerte presencia en centros financieros estratégicos y plataformas digitales avanzadas.
-                    </p>
-                    <div class="mt-4">
-                        <p class="text-[#114455] font-semibold mb-2">Mercados objetivo:</p>
-                        <ul class="space-y-2">
-                            <li class="flex items-center">
-                                <i class="fas fa-globe-americas text-[#493A1D] mr-2"></i>
-                                Centros financieros globales
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-mobile-alt text-[#493A1D] mr-2"></i>
-                                Plataformas digitales premium
-                            </li>
-                            <li class="flex items-center">
-                                <i class="fas fa-city text-[#493A1D] mr-2"></i>
-                                Zonas de alto poder adquisitivo
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- WHO -->
-                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
-                            <span class="font-bold text-xl">W</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-[#030B0E]">WHO</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Dirigido a clientes con ingresos altos que buscan servicios financieros sofisticados, exclusivos y alineados con su estilo de vida.
-                    </p>
-                    <div class="mt-4 space-y-3">
-                        <div class="flex items-center">
-                            <i class="fas fa-user-tie text-[#114455] mr-3"></i>
-                            <span>Profesionistas de alto desempeño</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-chart-line text-[#114455] mr-3"></i>
-                            <span>Ejecutivos y empresarios</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-hand-holding-usd text-[#114455] mr-3"></i>
-                            <span>Inversionistas</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- WHY -->
-                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
-                            <span class="font-bold text-xl">W</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-[#030B0E]">WHY</h3>
-                    </div>
-                    <p class="text-gray-700">
-                        NB existe para atender a un segmento que demanda excelencia, discreción y valor agregado, ofreciendo soluciones financieras que respalden no solo su patrimonio, sino también su calidad de vida.
-                    </p>
-                    <div class="mt-4 p-4 bg-white rounded-lg">
-                        <p class="text-sm text-[#493A1D]">
-                            <i class="fas fa-star mr-2"></i>
-                            Atención personalizada: gestores que ayudan a planear viajes y optimizar gastos en el extranjero.
+                        <p class="text-gray-300 mb-6 leading-relaxed">
+                            NB existe para atender a un segmento que demanda excelencia, discreción y valor agregado, ofreciendo soluciones financieras que respalden no solo su patrimonio, sino también su calidad de vida.
                         </p>
+                        <div class="bg-accent/20 p-6 rounded-xl border border-accent/30 animate-fade-in delay-600">
+                            <div class="flex items-start">
+                                <i class="fas fa-star text-accent mr-3 mt-1"></i>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-2">Atención Personalizada</h4>
+                                    <p class="text-sm text-gray-400">
+                                        Gestores que ayudan a planear viajes y optimizar gastos en el extranjero.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- WHEN -->
-                <div class="bg-[#F4FAFD] p-8 rounded-xl border-l-4 border-[#114455]">
-                    <div class="flex items-center mb-4">
-                        <div class="w-12 h-12 bg-[#114455] text-white rounded-full flex items-center justify-center mr-4">
-                            <span class="font-bold text-xl">W</span>
+                <div class="max-w-3xl mx-auto mt-8">
+                    <div class="glass-card p-8 animate-slide-in-up delay-500 hover-lift">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mr-4 animate-float" style="animation-delay: 1s;">
+                                <span class="font-bold text-2xl text-white">W</span>
+                            </div>
+                            <h3 class="text-3xl font-bold text-white">WHEN</h3>
                         </div>
-                        <h3 class="text-2xl font-bold text-[#030B0E]">WHEN</h3>
-                    </div>
-                    <p class="text-gray-700 mb-4">
-                        Surge en un contexto de transformación financiera global, donde los clientes demandan servicios bancarios flexibles, digitales y personalizados.
-                    </p>
-                    <div class="mt-4">
-                        <p class="text-[#114455] font-semibold">Utilización:</p>
-                        <p class="text-gray-600">
-                            Se utiliza de forma continua, tanto para operaciones diarias como para la planificación financiera de largo plazo.
-                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <p class="text-gray-300 leading-relaxed">
+                                    Surge en un contexto de transformación financiera global, donde los clientes demandan servicios bancarios flexibles, digitales y personalizados.
+                                </p>
+                            </div>
+                            <div class="bg-white/5 p-4 rounded-xl">
+                                <p class="text-secondary font-semibold mb-2">Utilización:</p>
+                                <p class="text-gray-400 text-sm">
+                                    De forma continua, tanto para operaciones diarias como para la planificación financiera de largo plazo.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- LOGO SIMBOLOGÍA -->
-                <div class="bg-gradient-to-br from-[#114455] to-[#030B0E] p-8 rounded-xl text-white">
-                    <div class="text-center mb-6">
-                        <img src="logo.png" alt="Logo" class="w-20 h-20 mx-auto mb-4">
-                        <h3 class="text-2xl font-bold">SIMBOLOGÍA</h3>
+        <!-- DIAPOSITIVA 3: Simbología -->
+        <section id="slide3" class="slide gradient-bg snap-start">
+            <div class="container mx-auto px-6 py-12">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 animate-zoom-in">
+                            SIMBOLOGÍA DEL LOGO
+                        </h2>
+                        <div class="w-24 h-1 bg-accent mx-auto animate-slide-reveal delay-200"></div>
                     </div>
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fas fa-mountain mt-1 mr-3 text-[#DBDFE6]"></i>
-                            <div>
-                                <h4 class="font-bold">Crecimiento</h4>
-                                <p class="text-sm text-gray-300">Progreso financiero constante</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-shield-alt mt-1 mr-3 text-[#DBDFE6]"></i>
-                            <div>
-                                <h4 class="font-bold">Estabilidad</h4>
-                                <p class="text-sm text-gray-300">Solidez institucional</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-bullseye mt-1 mr-3 text-[#DBDFE6]"></i>
-                            <div>
-                                <h4 class="font-bold">Metas Altas</h4>
-                                <p class="text-sm text-gray-300">Aspiración a la excelencia</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <i class="fas fa-lock mt-1 mr-3 text-[#DBDFE6]"></i>
-                            <div>
-                                <h4 class="font-bold">Seguridad</h4>
-                                <p class="text-sm text-gray-300">Protección a largo plazo</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Botones de Navegación -->
-    <section class="py-12 bg-gray-100 border-t-4 border-[#114455]">
-        <div class="container mx-auto px-6 flex justify-between items-center">
-            <a href="index-new.html" class="bg-[#114455] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#0a2d39] transition flex items-center">
-                <i class="fas fa-arrow-left mr-3"></i>Atrás
-            </a>
-            
-            <div class="text-center">
-                <p class="text-[#114455] font-bold text-lg">MÓDULO 1 DE 3: ANÁLISIS 5W'S</p>
-            </div>
-            
-            <a href="foda.html" class="bg-[#493A1D] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a4a2a] transition flex items-center">
-                Siguiente
-                <i class="fas fa-arrow-right ml-3"></i>
-            </a>
-        </div>
-    </section>
-</body>
-</html>
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <div class="flex items-center mb-6">
-                        <div class="w-10 h-10 mountain-shape bg-[#DBDFE6] mr-4"></div>
-                        <span class="text-2xl font-bold">NORTHWEST BANK</span>
-                    </div>
-                    <p class="text-gray-400 mb-6">
-                        Institución financiera premium con más de 70 años de experiencia, ofreciendo servicios exclusivos para clientes de alto patrimonio.
-                    </p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#114455] rounded-full flex items-center justify-center hover:bg-[#1a5c77]">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Contacto</h4>
-                    <div class="space-y-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-phone text-[#493A1D] mr-3"></i>
-                            <span>+52 55 1234 5678</span>
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- Logo -->
+                        <div class="text-center animate-zoom-in delay-300">
+                            <div class="glass-card p-12 inline-block animate-glow">
+                                <img src="logo.png" alt="Logo Northwest Bank" class="h-48 w-auto mx-auto animate-float" style="aspect-ratio: 636/294;">
+                            </div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-envelope text-[#493A1D] mr-3"></i>
-                            <span>premium@northwestbank.com</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-[#493A1D] mr-3"></i>
-                            <span>Av. Reforma 123, CDMX</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div>
-                    <h4 class="text-xl font-bold mb-6 text-[#DBDFE6]">Miembros del Equipo</h4>
-                    <div class="space-y-3">
-                        <div class="bg-[#114455]/30 p-3 rounded-lg">
-                            <p class="font-semibold">Zacarias Pérez Josefina Isabel</p>
-                            <p class="text-sm text-gray-400">Directora General</p>
-                        </div>
-                        <div class="bg-[#114455]/30 p-3 rounded-lg">
-                            <p class="font-semibold">García Rafael Erik Santiago</p>
-                            <p class="text-sm text-gray-400">Director de Tecnología</p>
+
+                        <!-- Significados -->
+                        <div class="space-y-6">
+                            <div class="glass-card p-6 flex items-start animate-slide-in-right delay-400 hover-lift">
+                                <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-mountain text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-xl mb-1">Crecimiento</h4>
+                                    <p class="text-gray-400">Progreso financiero constante hacia metas más altas</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-6 flex items-start animate-slide-in-right delay-500 hover-lift">
+                                <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-shield-alt text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-xl mb-1">Estabilidad</h4>
+                                    <p class="text-gray-400">Solidez institucional y respaldo financiero</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-6 flex items-start animate-slide-in-right delay-600 hover-lift">
+                                <div class="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-700 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-bullseye text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-xl mb-1">Metas Altas</h4>
+                                    <p class="text-gray-400">Aspiración a la excelencia y superación</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-6 flex items-start animate-slide-in-right delay-700 hover-lift">
+                                <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-lock text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-xl mb-1">Seguridad</h4>
+                                    <p class="text-gray-400">Protección patrimonial a largo plazo</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="border-t border-[#114455] mt-8 pt-8 text-center text-gray-400">
-                <p>© 2024 Northwest Bank. Todos los derechos reservados. Institución financiera regulada.</p>
+
+            <!-- Navegación inferior -->
+            <div class="absolute bottom-0 left-0 right-0 bg-dark/50 backdrop-blur-sm border-t border-white/10">
+                <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                    <a href="index-new.html" class="bg-primary text-white px-6 py-3 rounded-xl font-semibold hover:bg-primary-dark transition flex items-center hover-lift">
+                        <i class="fas fa-arrow-left mr-2"></i>Inicio
+                    </a>
+                    <div class="text-center">
+                        <p class="text-secondary font-bold">MÓDULO 1 DE 3: ANÁLISIS 5W'S</p>
+                    </div>
+                    <a href="foda.html" class="bg-accent text-white px-6 py-3 rounded-xl font-semibold hover:bg-accent-light transition flex items-center hover-lift">
+                        Siguiente<i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </footer>
+        </section>
+    </div>
 
     <script>
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.slide-dot');
+        const currentSlideEl = document.getElementById('currentSlide');
+
+        function goToSlide(index) {
+            slides[index].scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function updateIndicators(index) {
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+            currentSlideEl.textContent = index + 1;
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const index = Array.from(slides).indexOf(entry.target);
+                    updateIndicators(index);
+                    entry.target.querySelectorAll('[class*="animate-"]').forEach(el => {
+                        el.style.animation = 'none';
+                        el.offsetHeight;
+                        el.style.animation = null;
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        slides.forEach(slide => observer.observe(slide));
+
+        document.addEventListener('keydown', (e) => {
+            const currentIndex = parseInt(currentSlideEl.textContent) - 1;
+            if (e.key === 'ArrowDown' || e.key === 'PageDown') {
+                e.preventDefault();
+                if (currentIndex < slides.length - 1) goToSlide(currentIndex + 1);
+            } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
+                e.preventDefault();
+                if (currentIndex > 0) goToSlide(currentIndex - 1);
+            }
+        });
+
         function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            document.getElementById('mobileMenu').classList.toggle('hidden');
         }
     </script>
 </body>

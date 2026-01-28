@@ -1,0 +1,437 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@300;400;500;600&display=swap');
+
+@layer base {
+    body {
+        font-family: 'Urbanist', sans-serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer components {
+    /* Estilos de diapositivas */
+    .slide {
+        @apply min-h-screen flex flex-col justify-center relative overflow-hidden;
+        scroll-snap-align: start;
+    }
+
+    .slide-container {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    /* Indicador de diapositiva */
+    .slide-indicator {
+        @apply fixed right-8 top-1/2 transform -translate-y-1/2 z-50 flex flex-col gap-3;
+    }
+
+    .slide-dot {
+        @apply w-3 h-3 rounded-full bg-white/30 transition-all duration-300 cursor-pointer hover:bg-white/60;
+    }
+
+    .slide-dot.active {
+        @apply bg-white scale-125;
+    }
+
+    /* Número de diapositiva */
+    .slide-number {
+        @apply fixed bottom-8 right-8 text-white/70 text-sm font-semibold z-50;
+    }
+
+    /* Tarjetas con efecto glass */
+    .glass-card {
+        @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+    }
+
+    /* Botón de navegación de presentación */
+    .nav-btn {
+        @apply fixed top-1/2 transform -translate-y-1/2 z-50 bg-white/20 backdrop-blur-sm text-white p-4 rounded-full hover:bg-white/40 transition-all duration-300 shadow-lg;
+    }
+
+    .nav-btn-prev {
+        @apply left-4;
+    }
+
+    .nav-btn-next {
+        @apply right-4;
+    }
+}
+
+@layer utilities {
+    .gradient-bg {
+        background: linear-gradient(135deg, #114455 0%, #030B0E 100%);
+    }
+
+    .gradient-bg-alt {
+        background: linear-gradient(135deg, #030B0E 0%, #114455 100%);
+    }
+
+    .gradient-accent {
+        background: linear-gradient(135deg, #493A1D 0%, #2f2515 100%);
+    }
+
+    .afacad-flux {
+        font-family: 'Afacad Flux', monospace;
+    }
+
+    /* ==================== */
+    /* ANIMACIONES BÁSICAS  */
+    /* ==================== */
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInUp {
+        from {
+            transform: translateY(60px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-60px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fadeInScale {
+        from {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes zoomIn {
+        from {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoomInBounce {
+        0% {
+            transform: scale(0.5);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(1.05);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -200% 0;
+        }
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes blink {
+        0%, 50% {
+            opacity: 1;
+        }
+        51%, 100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes ripple {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    @keyframes glow {
+        0%, 100% {
+            box-shadow: 0 0 20px rgba(17, 68, 85, 0.5);
+        }
+        50% {
+            box-shadow: 0 0 40px rgba(17, 68, 85, 0.8);
+        }
+    }
+
+    @keyframes slideReveal {
+        from {
+            clip-path: inset(0 100% 0 0);
+        }
+        to {
+            clip-path: inset(0 0 0 0);
+        }
+    }
+
+    @keyframes countUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* ==================== */
+    /* CLASES DE ANIMACIÓN  */
+    /* ==================== */
+
+    .animate-slide-in-right {
+        animation: slideInRight 0.8s ease-out forwards;
+    }
+
+    .animate-slide-in-left {
+        animation: slideInLeft 0.8s ease-out forwards;
+    }
+
+    .animate-slide-in-up {
+        animation: slideInUp 0.7s ease-out forwards;
+    }
+
+    .animate-slide-in-down {
+        animation: slideInDown 0.7s ease-out forwards;
+    }
+
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    .animate-fade-in-scale {
+        animation: fadeInScale 0.8s ease-out forwards;
+    }
+
+    .animate-zoom-in {
+        animation: zoomIn 0.8s ease-out forwards;
+    }
+
+    .animate-zoom-in-bounce {
+        animation: zoomInBounce 0.9s ease-out forwards;
+    }
+
+    .animate-pulse-slow {
+        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    .animate-float {
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .animate-shimmer {
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+        background-size: 200% 100%;
+        animation: shimmer 2s infinite;
+    }
+
+    .animate-rotate {
+        animation: rotate 10s linear infinite;
+    }
+
+    .animate-bounce-slow {
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    .animate-glow {
+        animation: glow 2s ease-in-out infinite;
+    }
+
+    .animate-slide-reveal {
+        animation: slideReveal 1s ease-out forwards;
+    }
+
+    .animate-count-up {
+        animation: countUp 0.6s ease-out forwards;
+    }
+
+    /* ==================== */
+    /* DELAYS DE ANIMACIÓN  */
+    /* ==================== */
+
+    .delay-100 { animation-delay: 0.1s; opacity: 0; }
+    .delay-200 { animation-delay: 0.2s; opacity: 0; }
+    .delay-300 { animation-delay: 0.3s; opacity: 0; }
+    .delay-400 { animation-delay: 0.4s; opacity: 0; }
+    .delay-500 { animation-delay: 0.5s; opacity: 0; }
+    .delay-600 { animation-delay: 0.6s; opacity: 0; }
+    .delay-700 { animation-delay: 0.7s; opacity: 0; }
+    .delay-800 { animation-delay: 0.8s; opacity: 0; }
+    .delay-900 { animation-delay: 0.9s; opacity: 0; }
+    .delay-1000 { animation-delay: 1s; opacity: 0; }
+    .delay-1200 { animation-delay: 1.2s; opacity: 0; }
+    .delay-1500 { animation-delay: 1.5s; opacity: 0; }
+
+    /* ==================== */
+    /* EFECTOS HOVER        */
+    /* ==================== */
+
+    .hover-lift {
+        @apply transition-all duration-300;
+    }
+
+    .hover-lift:hover {
+        @apply transform -translate-y-2 shadow-2xl;
+    }
+
+    .hover-glow:hover {
+        box-shadow: 0 0 30px rgba(17, 68, 85, 0.4);
+    }
+
+    .hover-scale {
+        @apply transition-transform duration-300;
+    }
+
+    .hover-scale:hover {
+        @apply scale-105;
+    }
+
+    /* ==================== */
+    /* UTILIDADES EXTRA     */
+    /* ==================== */
+
+    .text-gradient {
+        background: linear-gradient(135deg, #114455, #493A1D);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .border-gradient {
+        border: 2px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    linear-gradient(135deg, #114455, #493A1D) border-box;
+    }
+
+    .bg-pattern {
+        background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.1) 1px, transparent 0);
+        background-size: 40px 40px;
+    }
+
+    /* Scroll snap para diapositivas */
+    .snap-y {
+        scroll-snap-type: y mandatory;
+    }
+
+    .snap-start {
+        scroll-snap-align: start;
+    }
+
+    .snap-center {
+        scroll-snap-align: center;
+    }
+
+    /* Ocultar scrollbar pero mantener funcionalidad */
+    .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+}
