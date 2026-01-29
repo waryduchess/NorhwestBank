@@ -109,8 +109,8 @@ ERIK - Presentacion y target:
 
 ISABEL - Caracteristicas y propuesta de valor:
    □ CARACTERISTICAS:
-     - Anualidad: $699 MXN
-     - CAT: 44-46%
+     - Anualidad: $1,999 MXN
+     - CAT: 60%
      - Primer anio gratis con $15,000 de gasto
    □ PROPUESTA DE VALOR:
      - Credito responsable
@@ -319,8 +319,8 @@ TARGET PERSONA:
 - Ejemplo: Andrea Martinez, Contadora Senior, 32 anios, soltera, CDMX
 
 CARACTERISTICAS:
-- Anualidad Base: $699 MXN
-- CAT Promedio: 44-46%
+- Anualidad Base: $1,999 MXN
+- CAT Promedio: 60%
 - Primer Ano Cero: $0 anualidad al gastar $15,000 MXN en primeros 3 meses
 
 PROPUESTA DE VALOR (VPC):

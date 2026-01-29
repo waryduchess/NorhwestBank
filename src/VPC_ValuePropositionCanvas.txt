@@ -1,0 +1,389 @@
+================================================================================
+            VALUE PROPOSITION CANVAS (VPC) - NORTHWEST BANK
+                   Lienzo de Propuesta de Valor
+================================================================================
+
+
+################################################################################
+                    QUE ES EL VALUE PROPOSITION CANVAS?
+################################################################################
+
+El VPC es una herramienta de estrategia creada por Alexander Osterwalder que
+ayuda a disenar productos que realmente resuelvan necesidades del cliente.
+
+Se divide en DOS partes que deben "encajar" (FIT):
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│   ┌───────────────────────┐              ┌───────────────────────┐         │
+│   │    MAPA DE VALOR      │    ←FIT→     │   PERFIL DEL CLIENTE  │         │
+│   │    (Value Map)        │              │   (Customer Profile)  │         │
+│   │                       │              │                       │         │
+│   │ • Productos/Servicios │              │ • Jobs (Trabajos)     │         │
+│   │ • Pain Relievers      │              │ • Pains (Dolores)     │         │
+│   │ • Gain Creators       │              │ • Gains (Ganancias)   │         │
+│   └───────────────────────┘              └───────────────────────┘         │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PERFIL DEL CLIENTE:
+- Jobs: Que tareas intenta completar el cliente?
+- Pains: Que le frustra o le impide lograrlo?
+- Gains: Que resultados o beneficios desea obtener?
+
+MAPA DE VALOR:
+- Productos/Servicios: Lo que ofreces
+- Pain Relievers: Como alivias los dolores del cliente
+- Gain Creators: Como generas los beneficios que busca
+
+
+################################################################################
+                         VPC - TARJETA ORBE
+                    "Tu mundo, una sola tarjeta"
+################################################################################
+
+--------------------------------------------------------------------------------
+                        PERFIL DEL CLIENTE
+--------------------------------------------------------------------------------
+
+TARGET: Clase media, 25-45 anios, profesionistas con ingresos estables
+EJEMPLO: Andrea Martinez, Contadora Senior, 32 anios, $38,000 MXN/mes, CDMX
+
+JOBS (Trabajos - Que quiere lograr):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Manejar gastos cotidianos de forma eficiente                              │
+│ • Construir historial crediticio desde cero                                 │
+│ • Realizar compras en linea de forma segura                                 │
+│ • Planificar su futuro financiero                                           │
+│ • Tener acceso a credito para emergencias                                   │
+│ • Domiciliar servicios y pagos recurrentes                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAINS (Dolores - Que le frustra):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tarjetas con sorpresas y comisiones ocultas                               │
+│ • CAT confuso y tasas poco claras                                           │
+│ • No tener historial en Buro de Credito                                     │
+│ • Anualidades altas sin beneficios reales                                   │
+│ • Falta de control sobre sus gastos                                         │
+│ • Miedo a endeudarse sin entender los costos                                │
+│ • Procesos de solicitud complicados                                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAINS (Ganancias - Que desea obtener):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tener control total de sus finanzas                                       │
+│ • Primera tarjeta accesible y sin complicaciones                            │
+│ • Respaldo de un banco confiable                                            │
+│ • Oportunidad de crecer hacia productos premium                             │
+│ • Transparencia en todos los costos                                         │
+│ • Seguridad en sus transacciones                                            │
+│ • Mejorar su perfil crediticio                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                          MAPA DE VALOR
+--------------------------------------------------------------------------------
+
+PRODUCTOS Y SERVICIOS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tarjeta de credito con anualidad de $1,999 MXN                            │
+│ • Primer ano GRATIS al gastar $15,000 MXN en 3 meses                        │
+│ • CAT Promedio: 60%                                                         │
+│ • App movil completa con control 24/7                                       │
+│ • Alertas en tiempo real de cada compra                                     │
+│ • Bloqueo/desbloqueo instantaneo                                            │
+│ • Meses sin intereses en comercios participantes                            │
+│ • Soporte 24/7 por telefono y chat                                          │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAIN RELIEVERS (Aliviadores de dolores):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Transparencia total en CAT (60% claramente informado)                     │
+│ • Sin letras pequenas ni clausulas confusas                                 │
+│ • Simulador CAT en la App para saber exactamente cuanto pagas               │
+│ • Bloqueo/desbloqueo instantaneo ante cualquier sospecha                    │
+│ • Sin comisiones ocultas                                                    │
+│ • Proceso de solicitud simple y rapido                                      │
+│ • Atencion al cliente accesible y capacitada                                │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAIN CREATORS (Creadores de ganancias):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • App con control total de gastos y limites 24/7                            │
+│ • Reportes positivos a Buro de Credito                                      │
+│ • Camino de crecimiento hacia SILVERSTONE e IMPERIUM                        │
+│ • Respaldo de Northwest Bank (+70 anios de experiencia)                     │
+│ • Chip de seguridad avanzado                                                │
+│ • Proteccion contra fraudes                                                 │
+│ • Seguro de proteccion de compras                                           │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                              FIT (ENCAJE)
+--------------------------------------------------------------------------------
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  "Profesionistas de clase media que buscan control y transparencia          │
+│   en sus finanzas, encuentran en ORBE una tarjeta accesible que             │
+│   construye historial crediticio sin sorpresas ni complicaciones"           │
+│                                                                             │
+│  MENSAJE CLAVE: "Esta tarjeta es el primer paso hacia el mundo premium"     │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+################################################################################
+                       VPC - TARJETA SILVERSTONE
+              "Cuando el exito se gestiona con inteligencia"
+################################################################################
+
+--------------------------------------------------------------------------------
+                        PERFIL DEL CLIENTE
+--------------------------------------------------------------------------------
+
+TARGET: Deportistas de elite y profesionales de alto rendimiento
+EJEMPLO: Carlos Mendez, Futbolista profesional, 28 anios, Liga MX
+
+JOBS (Trabajos - Que quiere lograr):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Viajar constantemente sin complicaciones                                  │
+│ • Delegar gestion financiera pero mantener control                          │
+│ • Protegerse durante viajes internacionales                                 │
+│ • Planificar retiro temprano (carreras de 10-15 anios)                      │
+│ • Mantener estilo de vida premium                                           │
+│ • Acceder a experiencias exclusivas                                         │
+│ • Gestionar ingresos altos de forma inteligente                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAINS (Dolores - Que le frustra):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Perdida de tiempo en aeropuertos y filas                                  │
+│ • Carreras cortas sin plan financiero de retiro                             │
+│ • Seguros insuficientes o complicados de usar                               │
+│ • Falta de atencion personalizada                                           │
+│ • No poder acceder a su dinero/control cuando viaja                         │
+│ • Complicaciones con moneda extranjera                                      │
+│ • Servicios que no entienden sus necesidades especificas                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAINS (Ganancias - Que desea obtener):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Acceso VIP sin complicaciones en cualquier aeropuerto                     │
+│ • Planificacion financiera para vida post-carrera                           │
+│ • Cobertura global de seguros hasta $1,000,000 USD                          │
+│ • Concierge personal disponible 24/7                                        │
+│ • Control total desde App movil                                             │
+│ • Reconocimiento y estatus acorde a su exito                                │
+│ • Experiencias de lujo en hoteles y viajes                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                          MAPA DE VALOR
+--------------------------------------------------------------------------------
+
+PRODUCTOS Y SERVICIOS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tarjeta de credito con anualidad de $6,900 MXN                            │
+│ • CAT Promedio: 35%                                                         │
+│ • Exencion de anualidad: Activos >= $750,000 o Consumo >= $900,000 MXN      │
+│ • Acceso ilimitado a salas VIP (hasta 5 acompanantes)                       │
+│ • Seguros de viaje hasta $1,000,000 USD                                     │
+│ • Concierge Elite 24/7 personalizado                                        │
+│ • Programa NB Luxury Stay (hoteles de lujo)                                 │
+│ • Upgrades de habitacion garantizados                                       │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAIN RELIEVERS (Aliviadores de dolores):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Movilidad sin friccion - viajes sin complicaciones                        │
+│ • Seguros transnacionales con cobertura real                                │
+│ • Planificacion de retiro temprano incluida                                 │
+│ • Concierge que resuelve cualquier situacion                                │
+│ • App con acceso inmediato y control total                                  │
+│ • Asistencia medica internacional                                           │
+│ • Seguro de renta de autos incluido                                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAIN CREATORS (Creadores de ganancias):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Salas VIP ilimitadas con 5 acompanantes                                   │
+│ • NB Luxury Stay con tarifas preferenciales                                 │
+│ • Early check-in y late check-out garantizados                              │
+│ • Experiencias gastronomicas exclusivas                                     │
+│ • Tasa preferencial de interes                                              │
+│ • Programa de puntos con bonificacion extra                                 │
+│ • Networking con otros profesionales de elite                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                              FIT (ENCAJE)
+--------------------------------------------------------------------------------
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  "Profesionales de alto rendimiento con carreras intensas y viajes          │
+│   frecuentes encuentran en SILVERSTONE una tarjeta que maximiza             │
+│   su tiempo, protege su patrimonio y planifica su futuro"                   │
+│                                                                             │
+│  MENSAJE CLAVE: "Para quienes el tiempo es su activo mas valioso"           │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+################################################################################
+                        VPC - TARJETA IMPERIUM
+                "No busca aprobacion, ejerce autoridad"
+################################################################################
+
+--------------------------------------------------------------------------------
+                        PERFIL DEL CLIENTE
+--------------------------------------------------------------------------------
+
+TARGET: Decision Makers de alto nivel, estrategas de elite
+EJEMPLO: Roberto Villarreal, CEO de grupo empresarial, 52 anios
+
+JOBS (Trabajos - Que quiere lograr):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tomar decisiones estrategicas de alto impacto                             │
+│ • Gestionar inversiones y construir legado                                  │
+│ • Networking con personas de su mismo nivel                                 │
+│ • Mantener imagen de autoridad y estatus                                    │
+│ • Acceder a oportunidades exclusivas de inversion                           │
+│ • Optimizar tiempo con servicios de primer nivel                            │
+│ • Proteger su patrimonio y el de su familia                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAINS (Dolores - Que le frustra):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Servicios que no entienden su nivel de exigencia                          │
+│ • Limites de credito inflexibles                                            │
+│ • Falta de acceso a circulos selectos                                       │
+│ • Productos que requieren "justificacion" o aprobacion                      │
+│ • Tramites y burocracia innecesaria                                         │
+│ • Perdida de oportunidades por falta de liquidez inmediata                  │
+│ • Servicios genericos sin personalizacion real                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAINS (Ganancias - Que desea obtener):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Exclusividad real - estatus "Invited Only"                                │
+│ • Linea de credito dinamica y flexible ($150K-$500K)                        │
+│ • Acceso a eventos cerrados y cenas privadas                                │
+│ • Estatus que no requiere explicaciones                                     │
+│ • Concierge ejecutivo totalmente dedicado                                   │
+│ • Proteccion elite sin limites                                              │
+│ • Oportunidades de networking de alto nivel                                 │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                          MAPA DE VALOR
+--------------------------------------------------------------------------------
+
+PRODUCTOS Y SERVICIOS:
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Tarjeta de credito con anualidad de $20,000 MXN                           │
+│ • Tarjeta adicional: $7,000 MXN                                             │
+│ • CAT Promedio: 25-30% (el mas bajo del ecosistema)                         │
+│ • Linea de credito: $150,000 - $500,000 MXN                                 │
+│ • Acceso ilimitado a lounges VIP y experiencias privadas                    │
+│ • Concierge ejecutivo 24/7 totalmente dedicado                              │
+│ • Eventos cerrados y cenas privadas                                         │
+│ • Estatus "Invited Only" a eventos exclusivos                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+PAIN RELIEVERS (Aliviadores de dolores):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Linea de credito ajustable en tiempo real - sin tramites                  │
+│ • Sin justificaciones para grandes compras                                  │
+│ • Concierge dedicado que anticipa necesidades                               │
+│ • Proteccion legal en el extranjero                                         │
+│ • Evacuacion medica de emergencia                                           │
+│ • Adelanto de efectivo sin comision                                         │
+│ • Atencion prioritaria en todo momento                                      │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GAIN CREATORS (Creadores de ganancias):
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ • Concierge ejecutivo DEDICADO 24/7 (no compartido)                         │
+│ • Acceso a subastas y ventas privadas                                       │
+│ • Networking exclusivo con otros tarjetahabientes IMPERIUM                  │
+│ • Aviacion privada con tarifas preferenciales                               │
+│ • Personal shopper en tiendas de lujo                                       │
+│ • Acceso a preventas inmobiliarias exclusivas                               │
+│ • Reservas en "restaurantes imposibles"                                     │
+│ • Invitaciones a eventos deportivos VIP (palcos, meet & greet)              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+--------------------------------------------------------------------------------
+                              FIT (ENCAJE)
+--------------------------------------------------------------------------------
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│  "Decision Makers que ven las finanzas como herramienta de poder            │
+│   y legado encuentran en IMPERIUM una tarjeta que ejerce autoridad,         │
+│   abre puertas exclusivas y no pide permiso"                                │
+│                                                                             │
+│  MENSAJE CLAVE: "La tarjeta que no necesita presentacion"                   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+################################################################################
+                    RESUMEN COMPARATIVO DEL ECOSISTEMA
+################################################################################
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                      PROGRESION DEL ECOSISTEMA                              │
+│                                                                             │
+│     ORBE ─────────────> SILVERSTONE ─────────────> IMPERIUM                 │
+│                                                                             │
+│   "Construye"            "Crece"                  "Domina"                  │
+│   Historial              Patrimonio               Legado                    │
+│                                                                             │
+│   Entrada                Consolidacion            Autoridad                 │
+│   $1,999/ano             $6,900/ano               $20,000/ano               │
+│   CAT 60%                CAT 35%                  CAT 25-30%                │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+TABLA COMPARATIVA:
+
+                        ORBE            SILVERSTONE         IMPERIUM
+--------------------------------------------------------------------------------
+Anualidad               $1,999          $6,900              $20,000
+CAT                     60%             35%                 25-30%
+Linea de Credito        Basica          Media-Alta          $150K-$500K
+Salas VIP               No              Ilimitado (5 acomp) Ilimitado+
+Concierge               No              24/7 Elite          24/7 Dedicado
+Seguros                 Basico          Hasta $1M USD       Sin limite
+Eventos Exclusivos      No              Algunos             Invited Only
+--------------------------------------------------------------------------------
+Target                  Clase Media     Profesionistas      Decision Makers
+                        25-45 anios     de Elite            Alto Nivel
+
+
+################################################################################
+                    PUNTOS CLAVE PARA LA EXPOSICION
+################################################################################
+
+1. Explicar brevemente que es el VPC y su importancia en el diseno de productos
+
+2. Para cada tarjeta, destacar:
+   - El PERFIL DEL CLIENTE (Jobs, Pains, Gains)
+   - El MAPA DE VALOR (Productos, Pain Relievers, Gain Creators)
+   - El FIT (como encaja la propuesta con las necesidades)
+
+3. Mostrar la PROGRESION del ecosistema:
+   ORBE (Construye) -> SILVERSTONE (Crece) -> IMPERIUM (Domina)
+
+4. Enfatizar que cada tarjeta esta disenada para un perfil ESPECIFICO
+
+5. El VPC demuestra que Northwest Bank ENTIENDE a sus clientes
+
+
+================================================================================
+               "Northwest Bank, donde tus finanzas reflejan tu estilo de vida"
+================================================================================
