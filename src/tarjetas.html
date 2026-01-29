@@ -78,10 +78,10 @@
                 <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-12">
                     <!-- Orbe -->
                     <div class="animate-slide-in-up delay-600 hover-lift cursor-pointer" onclick="goToSlide(3)">
-                        <div class="bg-gradient-to-br from-[#E8F2FB] to-[#ABD3F2] rounded-2xl p-6 text-center">
+                        <div class="bg-gradient-to-br from-primary-100 to-primary-500 rounded-2xl p-6 text-center">
                             <img src="tarjeta_uno.png" alt="Tarjeta Orbe" class="w-full h-auto rounded-xl shadow-2xl mb-4 animate-float">
-                            <h3 class="text-[#0D202B] text-2xl font-bold">ORBE</h3>
-                            <p class="text-[#0D202B]/70 text-sm">"Tu mundo, una sola tarjeta"</p>
+                            <h3 class="text-accent-500 text-2xl font-bold">ORBE</h3>
+                            <p class="text-accent-500/70 text-sm">"Tu mundo, una sola tarjeta"</p>
                         </div>
                     </div>
 
@@ -320,48 +320,188 @@
         </section>
 
         <!-- DIAPOSITIVA 4: Tarjeta ORBE -->
-        <section id="slide4" class="slide bg-gradient-to-br from-[#0D202B] via-[#121D24] to-[#ABD3F2]/20 snap-start">
+        <section id="slide4" class="slide bg-gradient-to-br from-accent-500 via-accent-700 to-primary-500/20 snap-start">
             <div class="container mx-auto px-6 py-12">
                 <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
                     <!-- Imagen de tarjeta -->
                     <div class="text-center animate-zoom-in">
                         <div class="relative inline-block">
-                            <div class="absolute inset-0 bg-[#ABD3F2]/30 blur-3xl rounded-full"></div>
+                            <div class="absolute inset-0 bg-primary-500/30 blur-3xl rounded-full"></div>
                             <img src="tarjeta_uno.png" alt="Tarjeta Orbe" class="relative w-full max-w-md h-auto rounded-2xl shadow-2xl animate-float">
                         </div>
                         <div class="mt-6 space-y-2">
-                            <h2 class="text-4xl font-bold text-white">TARJETA <span class="text-[#ABD3F2]">ORBE</span></h2>
-                            <p class="text-[#E8F2FB] text-xl italic">"Tu mundo, una sola tarjeta"</p>
+                            <h2 class="text-4xl font-bold text-white">TARJETA <span class="text-primary-500">ORBE</span></h2>
+                            <p class="text-primary-100 text-xl italic">"Tu mundo, una sola tarjeta"</p>
                         </div>
 
-                        <!-- Paleta de colores Orbe -->
+                        <!-- Paleta de colores Orbe - Compacta -->
                         <div class="mt-6 animate-slide-in-up delay-500">
-                            <p class="text-gray-400 text-sm mb-3 font-semibold">Paleta de Colores</p>
-                            <div class="flex justify-center gap-3">
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#E8F2FB] mx-auto mb-1 border border-white/30 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Celeste Pastel</p>
-                                    <p class="text-[9px] text-[#ABD3F2]">#E8F2FB</p>
+                            <button onclick="toggleShadesOrbe()" class="text-gray-400 text-sm mb-3 font-semibold hover:text-primary-500 transition cursor-pointer flex items-center justify-center mx-auto">
+                                <i class="fas fa-palette mr-2"></i>Ver Paleta Completa
+                                <i class="fas fa-chevron-down ml-2 text-xs" id="chevronOrbe"></i>
+                            </button>
+
+                            <!-- Tarjeta de Shades Expandible -->
+                            <div id="shadesOrbe" class="hidden mt-4 bg-white/5 backdrop-blur-md rounded-2xl p-5 border border-primary-500/30 max-w-xl mx-auto">
+                                <h4 class="text-primary-500 font-bold text-center mb-4">Shades - Tarjeta ORBE</h4>
+
+                                <!-- Primary Shades -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">PRIMARY (Azul Celeste)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-100 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-200 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-300 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-400 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-500 ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-primary-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-600 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-700 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-800 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-primary-900 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#ABD3F2] mx-auto mb-1 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Cielo Diurno</p>
-                                    <p class="text-[9px] text-[#ABD3F2]">#ABD3F2</p>
+
+                                <!-- Secondary Shades -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">SECONDARY (Gris)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-100 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-200 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-300 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-400 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-500 ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-secondary-300 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-600 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-700 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-800 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-secondary-900 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#82878A] mx-auto mb-1 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Gris Neutro</p>
-                                    <p class="text-[9px] text-[#ABD3F2]">#82878A</p>
+
+                                <!-- Accent Shades -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">ACCENT (Azul Oscuro)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-50 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">50</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-100 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-200 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-300 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-400 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-500 ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-primary-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-600 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-700 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-800 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded bg-accent-900 border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#0D202B] mx-auto mb-1 border border-white/20 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Noche Profunda</p>
-                                    <p class="text-[9px] text-[#ABD3F2]">#0D202B</p>
+
+                                <!-- Dark & White -->
+                                <div class="mb-4">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">DARK & WHITE</p>
+                                    <div class="flex gap-3 justify-center items-center">
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded bg-dark border border-white/30 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">Dark</span>
+                                            <span class="text-[7px] text-gray-600">#030B0E</span>
+                                        </div>
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded bg-white border border-gray-300 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">White</span>
+                                            <span class="text-[7px] text-gray-600">#F4FAFD</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#121D24] mx-auto mb-1 border border-white/20 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Negro Azulado</p>
-                                    <p class="text-[9px] text-[#ABD3F2]">#121D24</p>
+
+                                <!-- Códigos hex -->
+                                <div class="mt-4 pt-3 border-t border-white/10">
+                                    <p class="text-[9px] text-gray-500 text-center">
+                                        Primary: <span class="text-primary-500">#abd3f2</span> |
+                                        Secondary: <span class="text-secondary-300">#82878a</span> |
+                                        Accent: <span class="text-accent-100">#0e202c</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -370,56 +510,56 @@
                     <!-- Información -->
                     <div class="space-y-6">
                         <!-- Target -->
-                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#ABD3F2]/30 animate-slide-in-right delay-300">
-                            <h3 class="text-[#ABD3F2] font-bold text-xl mb-3"><i class="fas fa-user-friends mr-2"></i>Target Person</h3>
+                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/30 animate-slide-in-right delay-300">
+                            <h3 class="text-primary-500 font-bold text-xl mb-3"><i class="fas fa-user-friends mr-2"></i>Target Person</h3>
                             <p class="text-gray-300 text-sm leading-relaxed">
                                 Personas de clase media, entre <strong>25 y 45 años</strong>, con ingresos estables. Buscan una tarjeta de crédito sencilla para gastos cotidianos, pago de servicios y compras digitales. Valoran la confianza, el control de sus finanzas y el respaldo de un banco.
                             </p>
                             <button onclick="abrirModal()"
-                            class="mt-4 bg-[#ABD3F2]/20 text-[#ABD3F2] px-4 py-2 rounded-full text-sm font-semibold hover:bg-[#ABD3F2]/30 transition flex items-center hover-lift">
+                            class="mt-4 bg-primary-500/20 text-primary-500 px-4 py-2 rounded-full text-sm font-semibold hover:bg-primary-500/30 transition flex items-center hover-lift">
                                 <i class="fas fa-info-circle mr-2"></i>Ver
                             </button>
                         </div>
                         <!-- Target Persona -->
 
                         <!-- Características -->
-                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#ABD3F2]/30 animate-slide-in-right delay-400">
-                            <h3 class="text-[#ABD3F2] font-bold text-xl mb-3"><i class="fas fa-credit-card mr-2"></i>Características</h3>
+                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/30 animate-slide-in-right delay-400">
+                            <h3 class="text-primary-500 font-bold text-xl mb-3"><i class="fas fa-credit-card mr-2"></i>Características</h3>
                             <div class="grid grid-cols-2 gap-4 text-sm">
-                                <div class="bg-[#0D202B] rounded-xl p-3">
+                                <div class="bg-accent-500 rounded-xl p-3">
                                     <p class="text-gray-400">Anualidad Base</p>
                                     <p class="text-white font-bold text-lg">$1999 MXN</p>
                                 </div>
-                                <div class="bg-[#0D202B] rounded-xl p-3">
+                                <div class="bg-accent-500 rounded-xl p-3">
                                     <p class="text-gray-400">CAT Promedio</p>
                                     <p class="text-white font-bold text-lg">60%</p>
                                 </div>
                             </div>
-                            <div class="mt-4 bg-[#ABD3F2]/10 rounded-xl p-3">
-                                <p class="text-[#ABD3F2] font-semibold text-sm"><i class="fas fa-gift mr-2"></i>Primer Año Cero</p>
+                            <div class="mt-4 bg-primary-500/10 rounded-xl p-3">
+                                <p class="text-primary-500 font-semibold text-sm"><i class="fas fa-gift mr-2"></i>Primer Año Cero</p>
                                 <p class="text-gray-400 text-xs">$0 anualidad al gastar $15,000 MXN en los primeros 3 meses</p>
                             </div>
                         </div>
 
                         <!-- Beneficios -->
-                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-[#ABD3F2]/30 animate-slide-in-right delay-500">
-                            <h3 class="text-[#ABD3F2] font-bold text-xl mb-3"><i class="fas fa-gift mr-2"></i>Beneficios</h3>
+                        <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/30 animate-slide-in-right delay-500">
+                            <h3 class="text-primary-500 font-bold text-xl mb-3"><i class="fas fa-gift mr-2"></i>Beneficios</h3>
                             <ul class="space-y-2 text-sm text-gray-300">
-                                <li class="flex items-start"><i class="fas fa-check text-[#ABD3F2] mr-2 mt-1"></i>Control total desde la App móvil 24/7</li>
-                                <li class="flex items-start"><i class="fas fa-check text-[#ABD3F2] mr-2 mt-1"></i>Alertas en tiempo real de cada compra</li>
-                                <li class="flex items-start"><i class="fas fa-check text-[#ABD3F2] mr-2 mt-1"></i>Construcción de historial crediticio</li>
-                                <li class="flex items-start"><i class="fas fa-check text-[#ABD3F2] mr-2 mt-1"></i>Meses sin intereses en comercios participantes</li>
-                                <li class="flex items-start"><i class="fas fa-check text-[#ABD3F2] mr-2 mt-1"></i>Protección contra fraudes y compras seguras</li>
+                                <li class="flex items-start"><i class="fas fa-check text-primary-500 mr-2 mt-1"></i>Control total desde la App móvil 24/7</li>
+                                <li class="flex items-start"><i class="fas fa-check text-primary-500 mr-2 mt-1"></i>Alertas en tiempo real de cada compra</li>
+                                <li class="flex items-start"><i class="fas fa-check text-primary-500 mr-2 mt-1"></i>Construcción de historial crediticio</li>
+                                <li class="flex items-start"><i class="fas fa-check text-primary-500 mr-2 mt-1"></i>Meses sin intereses en comercios participantes</li>
+                                <li class="flex items-start"><i class="fas fa-check text-primary-500 mr-2 mt-1"></i>Protección contra fraudes y compras seguras</li>
                             </ul>
                         </div>
 
                         <!-- Obligaciones -->
                         <div class="bg-white/5 rounded-xl p-4 border border-white/10 animate-slide-in-right delay-600">
-                            <p class="text-gray-400 text-xs"><i class="fas fa-exclamation-circle mr-2 text-[#ABD3F2]"></i><strong>Obligaciones:</strong> Pago mínimo puntual cada mes, uso responsable de la línea de crédito, mantener datos actualizados, notificar pérdida o robo inmediatamente.</p>
+                            <p class="text-gray-400 text-xs"><i class="fas fa-exclamation-circle mr-2 text-primary-500"></i><strong>Obligaciones:</strong> Pago mínimo puntual cada mes, uso responsable de la línea de crédito, mantener datos actualizados, notificar pérdida o robo inmediatamente.</p>
                         </div>
 
                         <!-- Boton VPC -->
-                        <a href="vpc.html#vpc-orbe" class="inline-flex items-center bg-[#ABD3F2]/20 hover:bg-[#ABD3F2]/30 text-[#ABD3F2] px-4 py-2 rounded-full text-sm font-semibold transition mt-4 hover-lift">
+                        <a href="vpc.html#vpc-orbe" class="inline-flex items-center bg-primary-500/20 hover:bg-primary-500/30 text-primary-500 px-4 py-2 rounded-full text-sm font-semibold transition mt-4 hover-lift">
                             <i class="fas fa-bullseye mr-2"></i> Ver VPC de ORBE
                         </a>
                     </div>
@@ -514,24 +654,170 @@
                             </div>
                         </div>
 
-                        <!-- Paleta de colores Silverstone -->
+                        <!-- Paleta de colores Silverstone - Expandible -->
                         <div class="mt-6 animate-slide-in-up delay-700">
-                            <p class="text-gray-400 text-sm mb-3 font-semibold">Paleta de Colores</p>
-                            <div class="flex justify-center gap-4">
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#191919] mx-auto mb-1 border border-white/20 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Negro Profundo</p>
-                                    <p class="text-[9px] text-[#D1D1D1]">#191919</p>
+                            <button onclick="toggleShadesSilverstone()" class="text-gray-400 text-sm mb-3 font-semibold hover:text-[#D1D1D1] transition cursor-pointer flex items-center justify-center mx-auto">
+                                <i class="fas fa-palette mr-2"></i>Ver Paleta Completa
+                                <i class="fas fa-chevron-down ml-2 text-xs" id="chevronSilverstone"></i>
+                            </button>
+
+                            <!-- Tarjeta de Shades Expandible -->
+                            <div id="shadesSilverstone" class="hidden mt-4 bg-white/5 backdrop-blur-md rounded-2xl p-5 border border-[#D1D1D1]/30 max-w-xl mx-auto">
+                                <h4 class="text-[#D1D1D1] font-bold text-center mb-4">Shades - Tarjeta SILVERSTONE</h4>
+
+                                <!-- Accent Shades (Grises Claros) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">ACCENT (Gris Claro)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #f9f9f9;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #f6f6f6;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #f2f2f2;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #f0f0f0;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #ececec;" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #d7d7d7;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #a8a8a8;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #828282;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #636363;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#C4C4C4] mx-auto mb-1 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Plata</p>
-                                    <p class="text-[9px] text-[#D1D1D1]">#C4C4C4</p>
+
+                                <!-- Secondary Shades (Grises) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">SECONDARY (Gris)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #ededed;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #e4e4e4;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #d7d7d7;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #d0d0d0;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #c4c4c4;" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #b2b2b2;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #8b8b8b;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #6c6c6c;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #525252;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="text-center">
-                                    <div class="w-12 h-12 rounded-full bg-[#ECECEC] mx-auto mb-1 shadow-lg"></div>
-                                    <p class="text-[10px] text-gray-400">Platino</p>
-                                    <p class="text-[9px] text-[#D1D1D1]">#ECECEC</p>
+
+                                <!-- Primary Shades (Grises Oscuros a Negro) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">PRIMARY (Negro/Gris Oscuro)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #b8b8b8;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #959595;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #656565;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #474747;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #191919;" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-300 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #171717;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #121212;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #0e0e0e;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #0b0b0b;" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dark & White -->
+                                <div class="mb-4">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">DARK & WHITE</p>
+                                    <div class="flex gap-3 justify-center items-center">
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded" style="background-color: #252525;" class="border border-white/30 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">Dark</span>
+                                            <span class="text-[7px] text-gray-600">#252525</span>
+                                        </div>
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded" style="background-color: #E9E9E9;" class="border border-gray-300 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">White</span>
+                                            <span class="text-[7px] text-gray-600">#E9E9E9</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Códigos hex -->
+                                <div class="mt-4 pt-3 border-t border-white/10">
+                                    <p class="text-[9px] text-gray-500 text-center">
+                                        Primary: <span class="text-gray-300">#191919</span> |
+                                        Secondary: <span class="text-gray-300">#c4c4c4</span> |
+                                        Accent: <span class="text-gray-300">#ececec</span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -555,22 +841,173 @@
                             <p class="text-[#C5A059] text-xl italic">"No busca aprobación, ejerce autoridad"</p>
                         </div>
 
-                        <!-- Colores de la tarjeta -->
-                        <div class="mt-6 flex justify-center gap-4 animate-slide-in-up delay-600">
-                            <div class="text-center">
-                                <div class="w-12 h-12 rounded-full bg-[#1A1A1B] border-2 border-[#C5A059] mx-auto mb-1"></div>
-                                <p class="text-xs text-gray-400">Negro Carbón</p>
-                                <p class="text-xs text-[#C5A059]">60%</p>
-                            </div>
-                            <div class="text-center">
-                                <div class="w-12 h-12 rounded-full bg-[#D1D1D1] mx-auto mb-1"></div>
-                                <p class="text-xs text-gray-400">Gris Platino</p>
-                                <p class="text-xs text-[#C5A059]">30%</p>
-                            </div>
-                            <div class="text-center">
-                                <div class="w-12 h-12 rounded-full bg-[#C5A059] mx-auto mb-1"></div>
-                                <p class="text-xs text-gray-400">Dorado Champagne</p>
-                                <p class="text-xs text-[#C5A059]">10%</p>
+
+
+                        <!-- Paleta de colores Imperium - Expandible -->
+                        <div class="mt-6 animate-slide-in-up delay-700">
+                            <button onclick="toggleShadesImperium()" class="text-gray-400 text-sm mb-3 font-semibold hover:text-[#C5A059] transition cursor-pointer flex items-center justify-center mx-auto">
+                                <i class="fas fa-palette mr-2"></i>Ver Paleta Completa
+                                <i class="fas fa-chevron-down ml-2 text-xs" id="chevronImperium"></i>
+                            </button>
+
+                            <!-- Tarjeta de Shades Expandible -->
+                            <div id="shadesImperium" class="hidden mt-4 bg-white/5 backdrop-blur-md rounded-2xl p-5 border border-[#C5A059]/30 max-w-xl mx-auto">
+                                <h4 class="text-[#C5A059] font-bold text-center mb-4">Shades - Tarjeta IMPERIUM</h4>
+
+                                <!-- Accent Shades (Dorados/Tierra) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">ACCENT (Dorado/Tierra)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #efe2c6;" title="100" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #e7d5aa;" title="200" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #dbc183;" title="300" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #d5b56b;" title="400" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #caa346;" title="500" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-[#C5A059] opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #b89440;" title="600" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #8f7432;" title="700" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #6f5a27;" title="800" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #55441d;" title="900" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Secondary Shades (Grises) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">SECONDARY (Gris)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #ececec;" title="100" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #e3e3e3;" title="200" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #d6d6d6;" title="300" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #cecece;" title="400" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #c2c2c2;" title="500" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #b1b1b1;" title="600" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #8a8a8a;" title="700" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #6b6b6b;" title="800" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #515151;" title="900" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Primary Shades (Grises Oscuros a Negro) -->
+                                <div class="mb-5">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">PRIMARY (Negro/Gris Oscuro)</p>
+                                    <div class="flex gap-1 justify-center">
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #b6b6b6;" title="100" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">100</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #939393;" title="200" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">200</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #626262;" title="300" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">300</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #434343;" title="400" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">400</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #141414;" title="500" class="ring-2 ring-white/50 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-[#C5A059] opacity-0 group-hover:opacity-100 transition whitespace-nowrap font-bold">500</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #121212;" title="600" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">600</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #0e0e0e;" title="700" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">700</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #0b0b0b;" title="800" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">800</span>
+                                        </div>
+                                        <div class="group relative">
+                                            <div class="w-7 h-7 rounded" style="background-color: #080808;" title="900" class="border border-white/20 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="absolute -bottom-5 left-1/2 -translate-x-1/2 text-[7px] text-gray-500 opacity-0 group-hover:opacity-100 transition whitespace-nowrap">900</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dark & White -->
+                                <div class="mb-4">
+                                    <p class="text-xs text-gray-400 mb-2 font-semibold">DARK & WHITE</p>
+                                    <div class="flex gap-3 justify-center items-center">
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded" style="background-color: #030B0E;" class="border border-white/30 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">Dark</span>
+                                            <span class="text-[7px] text-gray-600">#030B0E</span>
+                                        </div>
+                                        <div class="group relative text-center">
+                                            <div class="w-10 h-10 rounded bg-white border border-gray-300 cursor-pointer hover:scale-110 transition"></div>
+                                            <span class="block mt-1 text-[8px] text-gray-500">White</span>
+                                            <span class="text-[7px] text-gray-600">#F4FAFD</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Códigos hex -->
+                                <div class="mt-4 pt-3 border-t border-white/10">
+                                    <p class="text-[9px] text-gray-500 text-center">
+                                        Primary: <span class="text-[#C5A059]">#141414</span> |
+                                        Secondary: <span class="text-gray-300">#c2c2c2</span> |
+                                        Accent: <span class="text-[#C5A059]">#caa346</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1322,6 +1759,27 @@
 
         function toggleMobileMenu() {
             document.getElementById('mobileMenu').classList.toggle('hidden');
+        }
+
+        function toggleShadesOrbe() {
+            const shades = document.getElementById('shadesOrbe');
+            const chevron = document.getElementById('chevronOrbe');
+            shades.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+
+        function toggleShadesImperium() {
+            const shades = document.getElementById('shadesImperium');
+            const chevron = document.getElementById('chevronImperium');
+            shades.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
+        }
+
+        function toggleShadesSilverstone() {
+            const shades = document.getElementById('shadesSilverstone');
+            const chevron = document.getElementById('chevronSilverstone');
+            shades.classList.toggle('hidden');
+            chevron.classList.toggle('rotate-180');
         }
 
         function abrirModal() {
