@@ -16,49 +16,17 @@
         .hover-lift { transition: transform 0.3s, box-shadow 0.3s; }
         .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
 
-        /* Indicador de navegación */
-        .nav-indicator {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            z-index: 100;
-        }
-        .nav-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.3);
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .nav-dot.active { background: #C5A059; transform: scale(1.3); }
-        .nav-dot:hover { background: rgba(197,160,89,0.7); }
-
-        /* Contenedor principal con padding para header/footer */
+        /* Contenedor principal sin restricciones de header/footer fijos */
         .main-content {
-            padding-top: 80px;
-            padding-bottom: 70px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-
-        /* Ajustes para zoom */
-        @media (max-width: 1200px) {
-            .main-content {
-                padding-top: 90px;
-                padding-bottom: 80px;
-            }
+            padding-top: 20px;
+            padding-bottom: 20px;
+            min-height: auto;
         }
     </style>
 </head>
 <body class="bg-[#0D0D0D] text-white">
-    <!-- Navegación -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#1A1A1B]/95 backdrop-blur-md border-b border-[#C5A059]/30">
+    <!-- Navegación (no fija para no tapar contenido) -->
+    <nav class="bg-[#1A1A1B] border-b border-[#C5A059]/30">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
                 <a href="index-new.html" class="flex items-center space-x-2 hover:opacity-80 transition">
@@ -73,13 +41,6 @@
         </div>
     </nav>
 
-    <!-- Indicador de navegación lateral -->
-    <div class="nav-indicator hidden lg:flex">
-        <div class="nav-dot" onclick="scrollToSection('intro')" title="Introduccion"></div>
-        <div class="nav-dot" onclick="scrollToSection('vpc-orbe')" title="ORBE"></div>
-        <div class="nav-dot" onclick="scrollToSection('vpc-silverstone')" title="SILVERSTONE"></div>
-        <div class="nav-dot" onclick="scrollToSection('vpc-imperium')" title="IMPERIUM"></div>
-    </div>
 
     <!-- SECCION 1: Introduccion al VPC -->
     <section id="intro" class="main-content bg-gradient-to-br from-[#0D0D0D] via-[#1A1A1B] to-[#0D202B]">
@@ -204,7 +165,7 @@
                             </div>
                             <div class="bg-white/5 rounded-lg p-3 border-l-4 border-blue-500">
                                 <p class="text-blue-400 font-semibold text-sm"><i class="fas fa-rocket mr-2"></i>Gain Creators</p>
-                                <p class="text-gray-300 text-xs">Construye historial Buro, Camino a SILVERSTONE, Respaldo +70 anos, Proteccion fraudes</p>
+                                <p class="text-gray-300 text-xs">Construye historial Buro, Camino a SILVERSTONE, Respaldo +70 años, Proteccion fraudes</p>
                             </div>
                         </div>
                     </div>
@@ -220,25 +181,25 @@
 
                 <!-- CIRCULO - Perfil Cliente ORBE -->
                 <div class="flex-1 w-full max-w-md">
-                    <div class="bg-gradient-to-br from-[#ABD3F2]/10 to-[#0D202B] rounded-full border-2 border-[#ABD3F2]/50 aspect-square p-5 flex flex-col justify-center max-w-sm mx-auto">
-                        <div class="text-center mb-3">
-                            <img src="persona1.png" alt="Andrea" class="w-14 h-14 rounded-full mx-auto border-2 border-[#ABD3F2] object-cover mb-1">
-                            <h3 class="text-[#ABD3F2] font-bold text-sm">Andrea Martinez</h3>
-                            <p class="text-gray-400 text-[10px]">32 anos | Contadora | $38,000/mes</p>
+                    <div class="bg-gradient-to-br from-[#ABD3F2]/10 to-[#0D202B] rounded-[50%] border-2 border-[#ABD3F2]/50 p-8 max-w-xs mx-auto overflow-hidden">
+                        <div class="text-center mb-2">
+                            <img src="persona1.png" alt="Andrea" class="w-12 h-12 rounded-full mx-auto border-2 border-[#ABD3F2] object-cover mb-1">
+                            <h3 class="text-[#ABD3F2] font-bold text-xs">Andrea Martinez</h3>
+                            <p class="text-gray-400 text-[9px]">32 años | Contadora | $38,000/mes</p>
                         </div>
 
-                        <div class="space-y-2 px-2">
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-[#ABD3F2] font-semibold text-xs"><i class="fas fa-tasks mr-1"></i> Jobs</p>
-                                <p class="text-gray-300 text-[10px]">Construir historial, comprar depto, controlar gastos</p>
+                        <div class="space-y-1">
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-[#ABD3F2] font-semibold text-[10px]"><i class="fas fa-tasks mr-1"></i> Jobs</p>
+                                <p class="text-gray-300 text-[9px]">Construir historial, comprar depto</p>
                             </div>
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-red-400 font-semibold text-xs"><i class="fas fa-frown mr-1"></i> Pains</p>
-                                <p class="text-gray-300 text-[10px]">Anualidades altas, falta transparencia, requisitos excesivos</p>
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-red-400 font-semibold text-[10px]"><i class="fas fa-frown mr-1"></i> Pains</p>
+                                <p class="text-gray-300 text-[9px]">Anualidades altas, sin transparencia</p>
                             </div>
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-yellow-400 font-semibold text-xs"><i class="fas fa-smile mr-1"></i> Gains</p>
-                                <p class="text-gray-300 text-[10px]">Control total, tarjeta confiable, beneficios compras</p>
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-yellow-400 font-semibold text-[10px]"><i class="fas fa-smile mr-1"></i> Gains</p>
+                                <p class="text-gray-300 text-[9px]">Control total, tarjeta confiable</p>
                             </div>
                         </div>
                     </div>
@@ -306,25 +267,25 @@
 
                 <!-- CIRCULO - Perfil Cliente SILVERSTONE -->
                 <div class="flex-1 w-full max-w-md">
-                    <div class="bg-gradient-to-br from-[#D1D1D1]/10 to-[#1A1A1B] rounded-full border-2 border-[#D1D1D1]/50 aspect-square p-5 flex flex-col justify-center max-w-sm mx-auto">
-                        <div class="text-center mb-3">
-                            <img src="persona2.png" alt="Daniel" class="w-14 h-14 rounded-full mx-auto border-2 border-[#D1D1D1] object-cover mb-1">
-                            <h3 class="text-[#D1D1D1] font-bold text-sm">Daniel Moreno</h3>
-                            <p class="text-gray-400 text-[10px]">41 anos | Lider Estrategico | $80,000/mes</p>
+                    <div class="bg-gradient-to-br from-[#D1D1D1]/10 to-[#1A1A1B] rounded-[50%] border-2 border-[#D1D1D1]/50 p-8 max-w-xs mx-auto overflow-hidden">
+                        <div class="text-center mb-2">
+                            <img src="persona2.png" alt="Daniel" class="w-12 h-12 rounded-full mx-auto border-2 border-[#D1D1D1] object-cover mb-1">
+                            <h3 class="text-[#D1D1D1] font-bold text-xs">Daniel Moreno</h3>
+                            <p class="text-gray-400 text-[9px]">41 años | Líder Estratégico | $80,000/mes</p>
                         </div>
 
-                        <div class="space-y-2 px-2">
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-[#D1D1D1] font-semibold text-xs"><i class="fas fa-tasks mr-1"></i> Jobs</p>
-                                <p class="text-gray-300 text-[10px]">Optimizar patrimonio, viajar comodo, reducir riesgos</p>
+                        <div class="space-y-1">
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-[#D1D1D1] font-semibold text-[10px]"><i class="fas fa-tasks mr-1"></i> Jobs</p>
+                                <p class="text-gray-300 text-[9px]">Optimizar patrimonio, viajar cómodo</p>
                             </div>
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-red-400 font-semibold text-xs"><i class="fas fa-frown mr-1"></i> Pains</p>
-                                <p class="text-gray-300 text-[10px]">Seguros adicionales, falta atencion, beneficios no premium</p>
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-red-400 font-semibold text-[10px]"><i class="fas fa-frown mr-1"></i> Pains</p>
+                                <p class="text-gray-300 text-[9px]">Seguros adicionales, falta atención</p>
                             </div>
-                            <div class="bg-white/5 rounded-lg p-2">
-                                <p class="text-yellow-400 font-semibold text-xs"><i class="fas fa-smile mr-1"></i> Gains</p>
-                                <p class="text-gray-300 text-[10px]">Proteccion real, eficiencia, estatus tangible</p>
+                            <div class="bg-white/5 rounded p-1.5">
+                                <p class="text-yellow-400 font-semibold text-[10px]"><i class="fas fa-smile mr-1"></i> Gains</p>
+                                <p class="text-gray-300 text-[9px]">Protección real, eficiencia, estatus</p>
                             </div>
                         </div>
                     </div>
@@ -396,7 +357,7 @@
                         <div class="text-center mb-3">
                             <img src="persona3.png" alt="Carlos" class="w-14 h-14 rounded-full mx-auto border-2 border-[#C5A059] object-cover mb-1">
                             <h3 class="text-[#C5A059] font-bold text-sm">Carlos Herrera</h3>
-                            <p class="text-gray-400 text-[10px]">30 anos | Consultor Tech | $120,000/mes</p>
+                            <p class="text-gray-400 text-[10px]">30 años | Consultor Tech | $120,000/mes</p>
                         </div>
 
                         <div class="space-y-2 px-2">
@@ -428,43 +389,21 @@
         </div>
     </section>
 
-    <!-- Footer fijo -->
-    <div class="fixed bottom-0 left-0 right-0 bg-[#1A1A1B]/95 backdrop-blur-sm border-t border-[#C5A059]/20 z-40">
-        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
-            <a href="tarjetas.html" class="text-white/80 hover:text-[#C5A059] transition flex items-center text-xs">
-                <i class="fas fa-arrow-left mr-1"></i> Tarjetas
+    <!-- Footer (no fijo) -->
+    <footer class="bg-[#1A1A1B] border-t border-[#C5A059]/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="tarjetas.html" class="text-white/80 hover:text-[#C5A059] transition flex items-center text-sm">
+                <i class="fas fa-arrow-left mr-2"></i> Volver a Tarjetas
             </a>
-            <p class="text-[#C5A059] font-semibold text-xs hidden sm:block">VALUE PROPOSITION CANVAS</p>
-            <a href="index-new.html" class="text-white/80 hover:text-[#C5A059] transition flex items-center text-xs">
-                Inicio <i class="fas fa-home ml-1"></i>
+            <p class="text-[#C5A059] font-semibold text-sm hidden sm:block">VALUE PROPOSITION CANVAS</p>
+            <a href="index-new.html" class="text-white/80 hover:text-[#C5A059] transition flex items-center text-sm">
+                Inicio <i class="fas fa-home ml-2"></i>
             </a>
         </div>
-    </div>
+    </footer>
 
     <script>
-        // Navegacion por secciones
-        function scrollToSection(id) {
-            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Observer para actualizar indicadores
-        const sections = document.querySelectorAll('section');
-        const navDots = document.querySelectorAll('.nav-dot');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const index = Array.from(sections).indexOf(entry.target);
-                    navDots.forEach((dot, i) => {
-                        dot.classList.toggle('active', i === index);
-                    });
-                }
-            });
-        }, { threshold: 0.3 });
-
-        sections.forEach(section => observer.observe(section));
-
-        // Scroll a seccion si viene con hash
+        // Scroll a seccion si viene con hash en la URL
         if (window.location.hash) {
             setTimeout(() => {
                 const target = document.querySelector(window.location.hash);
