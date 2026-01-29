@@ -16,11 +16,12 @@
         .hover-lift { transition: transform 0.3s, box-shadow 0.3s; }
         .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
 
-        /* Contenedor principal sin restricciones de header/footer fijos */
+        /* Contenedor principal - altura completa de pantalla */
         .main-content {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            min-height: auto;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
@@ -181,25 +182,25 @@
 
                 <!-- CIRCULO - Perfil Cliente ORBE -->
                 <div class="flex-1 w-full max-w-md">
-                    <div class="bg-gradient-to-br from-[#ABD3F2]/10 to-[#0D202B] rounded-[50%] border-2 border-[#ABD3F2]/50 p-8 max-w-xs mx-auto overflow-hidden">
-                        <div class="text-center mb-2">
-                            <img src="persona1.png" alt="Andrea" class="w-12 h-12 rounded-full mx-auto border-2 border-[#ABD3F2] object-cover mb-1">
-                            <h3 class="text-[#ABD3F2] font-bold text-xs">Andrea Martinez</h3>
-                            <p class="text-gray-400 text-[9px]">32 años | Contadora | $38,000/mes</p>
+                    <div class="bg-gradient-to-br from-[#ABD3F2]/10 to-[#0D202B] rounded-[50%] border-2 border-[#ABD3F2]/50 p-10 max-w-sm mx-auto overflow-hidden">
+                        <div class="text-center mb-3">
+                            <img src="persona1.png" alt="Andrea" class="w-16 h-16 rounded-full mx-auto border-2 border-[#ABD3F2] object-cover mb-2">
+                            <h3 class="text-[#ABD3F2] font-bold text-sm">Andrea Martinez</h3>
+                            <p class="text-gray-400 text-xs">32 años | Contadora | $38,000/mes</p>
                         </div>
 
-                        <div class="space-y-1">
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-[#ABD3F2] font-semibold text-[10px]"><i class="fas fa-tasks mr-1"></i> Jobs</p>
-                                <p class="text-gray-300 text-[9px]">Construir historial, comprar depto</p>
+                        <div class="space-y-2">
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-[#ABD3F2] font-semibold text-xs"><i class="fas fa-tasks mr-1"></i> Jobs</p>
+                                <p class="text-white text-[11px]">Construir historial, comprar depto</p>
                             </div>
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-red-400 font-semibold text-[10px]"><i class="fas fa-frown mr-1"></i> Pains</p>
-                                <p class="text-gray-300 text-[9px]">Anualidades altas, sin transparencia</p>
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-red-400 font-semibold text-xs"><i class="fas fa-frown mr-1"></i> Pains</p>
+                                <p class="text-white text-[11px]">Anualidades altas, sin transparencia</p>
                             </div>
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-yellow-400 font-semibold text-[10px]"><i class="fas fa-smile mr-1"></i> Gains</p>
-                                <p class="text-gray-300 text-[9px]">Control total, tarjeta confiable</p>
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-yellow-400 font-semibold text-xs"><i class="fas fa-smile mr-1"></i> Gains</p>
+                                <p class="text-white text-[11px]">Control total, tarjeta confiable</p>
                             </div>
                         </div>
                     </div>
@@ -267,25 +268,25 @@
 
                 <!-- CIRCULO - Perfil Cliente SILVERSTONE -->
                 <div class="flex-1 w-full max-w-md">
-                    <div class="bg-gradient-to-br from-[#D1D1D1]/10 to-[#1A1A1B] rounded-[50%] border-2 border-[#D1D1D1]/50 p-8 max-w-xs mx-auto overflow-hidden">
-                        <div class="text-center mb-2">
-                            <img src="persona2.png" alt="Daniel" class="w-12 h-12 rounded-full mx-auto border-2 border-[#D1D1D1] object-cover mb-1">
-                            <h3 class="text-[#D1D1D1] font-bold text-xs">Daniel Moreno</h3>
-                            <p class="text-gray-400 text-[9px]">41 años | Líder Estratégico | $80,000/mes</p>
+                    <div class="bg-gradient-to-br from-[#D1D1D1]/10 to-[#1A1A1B] rounded-[50%] border-2 border-[#D1D1D1]/50 p-10 max-w-sm mx-auto overflow-hidden">
+                        <div class="text-center mb-3">
+                            <img src="persona2.png" alt="Daniel" class="w-16 h-16 rounded-full mx-auto border-2 border-[#D1D1D1] object-cover mb-2">
+                            <h3 class="text-[#D1D1D1] font-bold text-sm">Daniel Moreno</h3>
+                            <p class="text-gray-400 text-xs">41 años | Líder Estratégico | $80,000/mes</p>
                         </div>
 
-                        <div class="space-y-1">
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-[#D1D1D1] font-semibold text-[10px]"><i class="fas fa-tasks mr-1"></i> Jobs</p>
-                                <p class="text-gray-300 text-[9px]">Optimizar patrimonio, viajar cómodo</p>
+                        <div class="space-y-2">
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-[#D1D1D1] font-semibold text-xs"><i class="fas fa-tasks mr-1"></i> Jobs</p>
+                                <p class="text-white text-[11px]">Optimizar patrimonio, viajar cómodo</p>
                             </div>
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-red-400 font-semibold text-[10px]"><i class="fas fa-frown mr-1"></i> Pains</p>
-                                <p class="text-gray-300 text-[9px]">Seguros adicionales, falta atención</p>
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-red-400 font-semibold text-xs"><i class="fas fa-frown mr-1"></i> Pains</p>
+                                <p class="text-white text-[11px]">Seguros adicionales, falta atención</p>
                             </div>
-                            <div class="bg-white/5 rounded p-1.5">
-                                <p class="text-yellow-400 font-semibold text-[10px]"><i class="fas fa-smile mr-1"></i> Gains</p>
-                                <p class="text-gray-300 text-[9px]">Protección real, eficiencia, estatus</p>
+                            <div class="bg-white/5 rounded-lg p-2">
+                                <p class="text-yellow-400 font-semibold text-xs"><i class="fas fa-smile mr-1"></i> Gains</p>
+                                <p class="text-white text-[11px]">Protección real, eficiencia, estatus</p>
                             </div>
                         </div>
                     </div>
@@ -353,25 +354,25 @@
 
                 <!-- CIRCULO - Perfil Cliente IMPERIUM -->
                 <div class="flex-1 w-full max-w-md">
-                    <div class="bg-gradient-to-br from-[#C5A059]/10 to-[#1A1A1B] rounded-full border-2 border-[#C5A059]/50 aspect-square p-5 flex flex-col justify-center max-w-sm mx-auto">
+                    <div class="bg-gradient-to-br from-[#C5A059]/10 to-[#1A1A1B] rounded-[50%] border-2 border-[#C5A059]/50 p-10 max-w-sm mx-auto overflow-hidden">
                         <div class="text-center mb-3">
-                            <img src="persona3.png" alt="Carlos" class="w-14 h-14 rounded-full mx-auto border-2 border-[#C5A059] object-cover mb-1">
+                            <img src="persona3.png" alt="Carlos" class="w-16 h-16 rounded-full mx-auto border-2 border-[#C5A059] object-cover mb-2">
                             <h3 class="text-[#C5A059] font-bold text-sm">Carlos Herrera</h3>
-                            <p class="text-gray-400 text-[10px]">30 años | Consultor Tech | $120,000/mes</p>
+                            <p class="text-gray-400 text-xs">30 años | Consultor Tech | $120,000/mes</p>
                         </div>
 
-                        <div class="space-y-2 px-2">
+                        <div class="space-y-2">
                             <div class="bg-white/5 rounded-lg p-2">
                                 <p class="text-[#C5A059] font-semibold text-xs"><i class="fas fa-tasks mr-1"></i> Jobs</p>
-                                <p class="text-gray-300 text-[10px]">Fortalecer historial, invertir, aumentar patrimonio</p>
+                                <p class="text-white text-[11px]">Fortalecer historial, invertir, aumentar patrimonio</p>
                             </div>
                             <div class="bg-white/5 rounded-lg p-2">
                                 <p class="text-red-400 font-semibold text-xs"><i class="fas fa-frown mr-1"></i> Pains</p>
-                                <p class="text-gray-300 text-[10px]">Intereses sin explicacion, beneficios inutiles, no premian</p>
+                                <p class="text-white text-[11px]">Intereses sin explicacion, beneficios inutiles, no premian</p>
                             </div>
                             <div class="bg-white/5 rounded-lg p-2">
                                 <p class="text-yellow-400 font-semibold text-xs"><i class="fas fa-smile mr-1"></i> Gains</p>
-                                <p class="text-gray-300 text-[10px]">Credito estrategico, beneficios reales, mejores condiciones</p>
+                                <p class="text-white text-[11px]">Credito estrategico, beneficios reales, mejores condiciones</p>
                             </div>
                         </div>
                     </div>
